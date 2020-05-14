@@ -1,0 +1,40 @@
+\hypertarget{main_8cpp}{}\doxysection{Файл main.\+cpp}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Headers/sorts.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Headers/\+Read\+Writer.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include \char`\"{}Headers/searches.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_a15070592fb8aac2edc64aef2728f5c29}\label{main_8cpp_a15070592fb8aac2edc64aef2728f5c29}} 
+void {\bfseries Create\+File} (int amount\+\_\+of\+\_\+passengers)
+\item 
+\mbox{\Hypertarget{main_8cpp_a3586cd53acbb1bfeb70efaaf6e5bee4f}\label{main_8cpp_a3586cd53acbb1bfeb70efaaf6e5bee4f}} 
+bool {\bfseries Is\+Array\+Sorted} (vector$<$ \mbox{\hyperlink{classPassenger}{Passenger}} $>$ mass)
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Фвйл с реалищацией 
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Choose amount of passengers\+: "Size options\+: 10.\+000 50.\+000 100.\+000 150.\+000 200.\+000 250.\+000 500.\+000 750.\+000 1.\+000.\+000
+
+Choose method of sorting Methods\+: 1\+: bubble, 2\+: insert, 3\+: heap
+
+\mbox{\hyperlink{classGenerator}{Generator}} works
+
+Manual array

@@ -1,0 +1,109 @@
+\hypertarget{classGenerator}{}\doxysection{Класс Generator}
+\label{classGenerator}\index{Generator@{Generator}}
+
+
+
+\begin{DoxyItemize}
+\item Класс, описывающий генерацию одного пасажира или вектор пассажиров 
+\end{DoxyItemize} 
+
+
+
+
+{\ttfamily \#include $<$generator.\+h$>$}
+
+\doxysubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classGenerator_aab65b475a0d7b21fcf9df078a29c486e}{random\+\_\+flight\+\_\+number}} ()
+\item 
+static int \mbox{\hyperlink{classGenerator_aeb9d20d21f20c9a927e2184dcfe046f1}{random\+\_\+seat\+\_\+number}} ()
+\item 
+static \mbox{\hyperlink{classFio}{Fio}} \mbox{\hyperlink{classGenerator_a544dfd5a23d91217d5058b9a3959767a}{random\+\_\+fio}} ()
+\item 
+static \mbox{\hyperlink{classFlightTime}{Flight\+Time}} \mbox{\hyperlink{classGenerator_a8b386cac24d234e3b96e56a02057384e}{random\+\_\+flight\+\_\+data}} ()
+\item 
+static \mbox{\hyperlink{classPassenger}{Passenger}} \mbox{\hyperlink{classGenerator_a92606a5d52899eacc5c297260cf86c2e}{generate\+\_\+passenger}} ()
+\item 
+static vector$<$ \mbox{\hyperlink{classPassenger}{Passenger}} $>$ \mbox{\hyperlink{classGenerator_ab39a315c4f4096399d262367cc5f28e1}{get\+\_\+passengers}} (int n)
+\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGenerator_a83b1f0dcf0a34faa5ea4cc65c685b140}\label{classGenerator_a83b1f0dcf0a34faa5ea4cc65c685b140}} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&out, const vector$<$ \mbox{\hyperlink{classPassenger}{Passenger}} $>$ \&passengers)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+
+\begin{DoxyItemize}
+\item Класс, описывающий генерацию одного пасажира или вектор пассажиров 
+\end{DoxyItemize}
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classGenerator_a92606a5d52899eacc5c297260cf86c2e}\label{classGenerator_a92606a5d52899eacc5c297260cf86c2e}} 
+\index{Generator@{Generator}!generate\_passenger@{generate\_passenger}}
+\index{generate\_passenger@{generate\_passenger}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{generate\_passenger()}{generate\_passenger()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPassenger}{Passenger}} Generator\+::generate\+\_\+passenger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Возвращает}
+Случайного пассажира 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenerator_ab39a315c4f4096399d262367cc5f28e1}\label{classGenerator_ab39a315c4f4096399d262367cc5f28e1}} 
+\index{Generator@{Generator}!get\_passengers@{get\_passengers}}
+\index{get\_passengers@{get\_passengers}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{get\_passengers()}{get\_passengers()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classPassenger}{Passenger}} $>$ Generator\+::get\+\_\+passengers (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Аргументы}
+{\em n} & Количество пассажиров \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Вектор пассажиров 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenerator_a544dfd5a23d91217d5058b9a3959767a}\label{classGenerator_a544dfd5a23d91217d5058b9a3959767a}} 
+\index{Generator@{Generator}!random\_fio@{random\_fio}}
+\index{random\_fio@{random\_fio}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{random\_fio()}{random\_fio()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFio}{Fio}} Generator\+::random\+\_\+fio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Возвращает}
+Случайное ФИО пассажира 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenerator_a8b386cac24d234e3b96e56a02057384e}\label{classGenerator_a8b386cac24d234e3b96e56a02057384e}} 
+\index{Generator@{Generator}!random\_flight\_data@{random\_flight\_data}}
+\index{random\_flight\_data@{random\_flight\_data}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{random\_flight\_data()}{random\_flight\_data()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFlightTime}{Flight\+Time}} Generator\+::random\+\_\+flight\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Возвращает}
+Сучайную дату рейса 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenerator_aab65b475a0d7b21fcf9df078a29c486e}\label{classGenerator_aab65b475a0d7b21fcf9df078a29c486e}} 
+\index{Generator@{Generator}!random\_flight\_number@{random\_flight\_number}}
+\index{random\_flight\_number@{random\_flight\_number}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{random\_flight\_number()}{random\_flight\_number()}}
+{\footnotesize\ttfamily int Generator\+::random\+\_\+flight\+\_\+number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Возвращает}
+Случайную дату рейса 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenerator_aeb9d20d21f20c9a927e2184dcfe046f1}\label{classGenerator_aeb9d20d21f20c9a927e2184dcfe046f1}} 
+\index{Generator@{Generator}!random\_seat\_number@{random\_seat\_number}}
+\index{random\_seat\_number@{random\_seat\_number}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{random\_seat\_number()}{random\_seat\_number()}}
+{\footnotesize\ttfamily int Generator\+::random\+\_\+seat\+\_\+number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Возвращает}
+Случайное посадочное место 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Headers/generator.\+h\item 
+Cpp-\/files/generator.\+cpp\end{DoxyCompactItemize}

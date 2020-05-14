@@ -1,0 +1,134 @@
+-----------------------------------------
+|					|
+|					|
+|					|
+|--------Sorting results----------------|
+|					|
+|					|
+|					|
+|					|
+-----------------------------------------
+It was BubbleSort! 
+The amount of passengers is: 10000
+Sorting time is:  21s
+
+It was InsertSort! 
+The amount of passengers is: 10000
+Sorting time is:  4s
+
+It was  HeapSort! 
+The amount of passengers is: 10000
+Sorting time is:  0s
+
+
+
+
+
+It was BubbleSort! 
+The amount of passengers is: 50000
+Sorting time is:  517s
+
+It was InsertSort! 
+The amount of passengers is: 50000
+Sorting time is:  116s
+
+It was  HeapSort! 
+The amount of passengers is: 50000
+Sorting time is:  0s
+
+
+
+
+
+It was BubbleSort! 
+The amount of passengers is: 100000
+Sorting time is:  2100s
+
+It was InsertSort! 
+The amount of passengers is: 100000
+Sorting time is:  488s
+
+It was  HeapSort! 
+The amount of passengers is: 100000
+Sorting time is:  1s
+
+
+
+
+
+
+It was BubbleSort! 
+The amount of passengers is: 150000
+Sorting time is:  4732s
+
+It was InsertSort! 
+The amount of passengers is: 150000
+Sorting time is:  1119s
+
+It was  HeapSort! 
+The amount of passengers is: 150000
+Sorting time is:  1s
+
+
+
+
+
+It was BubbleSort! 
+The amount of passengers is: 200000
+Sorting time is:  9119s
+
+It was InsertSort! 
+The amount of passengers is: 200000
+Sorting time is:  1907s
+
+It was  HeapSort! 
+The amount of passengers is: 200000
+Sorting time is:  2s
+
+
+
+
+
+It was InsertSort! 
+The amount of passengers is: 250000
+Sorting time is:  2957s
+
+It was  HeapSort! 
+The amount of passengers is: 250000
+Sorting time is:  3s
+
+
+
+
+
+It was InsertSort! 
+The amount of passengers is: 500000
+Sorting time is:  13665s
+
+
+It was  HeapSort! 
+The amount of passengers is: 500000
+Sorting time is:  7s
+
+
+
+
+
+It was InsertSort! 
+The amount of passengers is: 750000
+Sorting time is:  27313s
+
+It was  HeapSort! 
+The amount of passengers is: 750000
+Sorting time is:  11s
+
+
+
+It was  HeapSort! 
+The amount of passengers is: 1000000
+Sorting time is:  16s
+
+
+
+
+
