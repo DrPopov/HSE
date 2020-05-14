@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Lab_1" targetName="Lab_1" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="89475e94-c639-4304-b96a-a3993877d1f0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1arjbPIL1kBeUspx3ukoflPMmtD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab_1" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Lab_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lab_1" TARGET_NAME="Lab_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lab_1" RUN_TARGET_NAME="Lab_1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="89475e94-c639-4304-b96a-a3993877d1f0" name="Default Changelist" comment="" />
+      <created>1587500677999</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587500677999</updated>
+      <workItem from="1587500679564" duration="25896000" />
+      <workItem from="1587572735809" duration="16591000" />
+      <workItem from="1587932247156" duration="14880000" />
+      <workItem from="1587987976559" duration="4981000" />
+      <workItem from="1588763650910" duration="56000" />
+      <workItem from="1589465366604" duration="987000" />
+      <workItem from="1589495811913" duration="644000" />
+    </task>
+    <task id="LOCAL-00001" summary="Start Lab2">
+      <created>1587500779341</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587500779341</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add linear and binary search">
+      <created>1587516223554</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587516223554</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add linear and binary search2">
+      <created>1587519678497</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587519678497</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Start Lab2" />
+    <MESSAGE value="Add linear and binary search" />
+    <MESSAGE value="Add linear and binary search2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add linear and binary search2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="109" width="912" height="887" key="CommitChangelistDialog2" timestamp="1587519678190">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="2419" y="84" width="912" height="909" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587500778808" />
+    <state x="549" y="109" width="912" height="887" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1587519678190" />
+    <state x="2649" y="276" width="424" height="484" key="FileChooserDialogImpl" timestamp="1589495853201">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2649" y="276" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589495853201" />
+    <state x="771" y="296" width="424" height="513" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1587941281362" />
+    <state width="1807" height="220" key="GridCell.Tab.0.bottom" timestamp="1587995385183">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="393" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587633817380" />
+    <state width="1807" height="220" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1587995385183" />
+    <state width="1807" height="220" key="GridCell.Tab.0.center" timestamp="1587995385182">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="393" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587633817380" />
+    <state width="1807" height="220" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1587995385182" />
+    <state width="1807" height="220" key="GridCell.Tab.0.left" timestamp="1587995385182">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="393" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587633817380" />
+    <state width="1807" height="220" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1587995385182" />
+    <state width="1807" height="220" key="GridCell.Tab.0.right" timestamp="1587995385183">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="393" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587633817380" />
+    <state width="1807" height="220" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1587995385183" />
+    <state width="1807" height="463" key="GridCell.Tab.1.bottom" timestamp="1587948375815">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="279" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587509129262" />
+    <state width="1807" height="463" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1587948375815" />
+    <state width="1807" height="463" key="GridCell.Tab.1.center" timestamp="1587948375815">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="279" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587509129262" />
+    <state width="1807" height="463" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1587948375815" />
+    <state width="1807" height="463" key="GridCell.Tab.1.left" timestamp="1587948375815">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="279" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587509129262" />
+    <state width="1807" height="463" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1587948375815" />
+    <state width="1807" height="463" key="GridCell.Tab.1.right" timestamp="1587948375815">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="279" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587509129262" />
+    <state width="1807" height="463" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1587948375815" />
+    <state x="2369" y="174" key="SettingsEditor" timestamp="1589495844231">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2369" y="174" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589495844231" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1587574706648">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1587574706648" />
+  </component>
+</project>

@@ -48,5 +48,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Lab_1.dir/DependInfo.cmake"
+  "CMakeFiles/Lab_3.dir/DependInfo.cmake"
   )

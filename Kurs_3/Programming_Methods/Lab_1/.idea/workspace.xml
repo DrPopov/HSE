@@ -11,64 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="554ce42b-4f3d-4a9e-a2c5-563e8117403d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/output/data_5000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sortedArrays/output_bubble_5000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sortedArrays/output_heap_5000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sortedArrays/output_insert_5000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/.idea/Lab_2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/3.16.5/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/3.16.5/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdCXX/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Lab_1.dir/CXX.includecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Lab_1.dir/Cpp-files/ReadWriter.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Lab_1.dir/Cpp-files/fio.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Lab_1.dir/Cpp-files/flightTime.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Lab_1.dir/Cpp-files/generator.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Lab_1.dir/Cpp-files/passenger.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Lab_1.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Lab_1.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Lab_1.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Lab_1.dir/depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Lab_1.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Lab_1.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Lab_1.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Lab_1.dir/main.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Lab_1.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab_2/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Headers/searches.h" beforeDir="false" afterPath="$PROJECT_DIR$/Headers/searches.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Headers/sorts.h" beforeDir="false" afterPath="$PROJECT_DIR$/Headers/sorts.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/Cpp-files/ReadWriter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/Cpp-files/ReadWriter.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/Cpp-files/fio.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/Cpp-files/fio.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/Cpp-files/flightTime.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/Cpp-files/flightTime.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/Cpp-files/generator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/Cpp-files/generator.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/Cpp-files/passenger.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/Cpp-files/passenger.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_1.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lab_1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Lab_1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results.txt" afterDir="false" />
-    </list>
+    <list default="true" id="554ce42b-4f3d-4a9e-a2c5-563e8117403d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,9 +20,8 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectId" id="1a69vHXTh4p0ecPYOG3OiMy1rCq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -95,7 +37,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -140,6 +82,7 @@
       <workItem from="1587499793952" duration="757000" />
       <workItem from="1587500569114" duration="20000" />
       <workItem from="1587500638511" duration="118000" />
+      <workItem from="1589495858471" duration="1784000" />
     </task>
     <task id="LOCAL-00001" summary="Last step">
       <created>1586186020531</created>
@@ -188,10 +131,10 @@
     <state x="542" y="139" key="CommitChangelistDialog2/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1586445444274" />
     <state x="2412" y="115" width="925" height="847" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586186020170" />
     <state x="542" y="139" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586269554382" />
-    <state x="2657" y="283" width="424" height="513" key="FileChooserDialogImpl" timestamp="1587500676033">
+    <state x="2657" y="283" width="424" height="513" key="FileChooserDialogImpl" timestamp="1589495916418">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2657" y="283" width="424" height="513" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587500676033" />
+    <state x="2657" y="283" width="424" height="513" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589495916418" />
     <state x="778" y="303" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1586771450148" />
     <state width="1874" height="375" key="GridCell.Tab.0.bottom" timestamp="1587500755813">
       <screen x="1920" y="0" width="1920" height="1080" />

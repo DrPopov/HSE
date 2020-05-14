@@ -48,24 +48,13 @@ RM = /snap/clion/112/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_1
+CMAKE_SOURCE_DIR = /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/112/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/snap/clion/112/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_1/cmake-build-debug/CMakeFiles /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/cmake-build-debug/CMakeFiles /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Lab_1
+# Target rules for targets named Lab_3
 
 # Build rule for target.
-Lab_1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Lab_1
-.PHONY : Lab_1
+Lab_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Lab_3
+.PHONY : Lab_3
 
 # fast build rule for target.
-Lab_1/fast:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/build
-.PHONY : Lab_1/fast
+Lab_3/fast:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/build
+.PHONY : Lab_3/fast
 
 Cpp-files/ReadWriter.o: Cpp-files/ReadWriter.cpp.o
 
@@ -129,7 +129,7 @@ Cpp-files/ReadWriter.o: Cpp-files/ReadWriter.cpp.o
 
 # target to build an object file
 Cpp-files/ReadWriter.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/Cpp-files/ReadWriter.cpp.o
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/ReadWriter.cpp.o
 .PHONY : Cpp-files/ReadWriter.cpp.o
 
 Cpp-files/ReadWriter.i: Cpp-files/ReadWriter.cpp.i
@@ -138,7 +138,7 @@ Cpp-files/ReadWriter.i: Cpp-files/ReadWriter.cpp.i
 
 # target to preprocess a source file
 Cpp-files/ReadWriter.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/Cpp-files/ReadWriter.cpp.i
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/ReadWriter.cpp.i
 .PHONY : Cpp-files/ReadWriter.cpp.i
 
 Cpp-files/ReadWriter.s: Cpp-files/ReadWriter.cpp.s
@@ -147,7 +147,7 @@ Cpp-files/ReadWriter.s: Cpp-files/ReadWriter.cpp.s
 
 # target to generate assembly for a file
 Cpp-files/ReadWriter.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/Cpp-files/ReadWriter.cpp.s
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/ReadWriter.cpp.s
 .PHONY : Cpp-files/ReadWriter.cpp.s
 
 Cpp-files/fio.o: Cpp-files/fio.cpp.o
@@ -156,7 +156,7 @@ Cpp-files/fio.o: Cpp-files/fio.cpp.o
 
 # target to build an object file
 Cpp-files/fio.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/Cpp-files/fio.cpp.o
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/fio.cpp.o
 .PHONY : Cpp-files/fio.cpp.o
 
 Cpp-files/fio.i: Cpp-files/fio.cpp.i
@@ -165,7 +165,7 @@ Cpp-files/fio.i: Cpp-files/fio.cpp.i
 
 # target to preprocess a source file
 Cpp-files/fio.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/Cpp-files/fio.cpp.i
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/fio.cpp.i
 .PHONY : Cpp-files/fio.cpp.i
 
 Cpp-files/fio.s: Cpp-files/fio.cpp.s
@@ -174,7 +174,7 @@ Cpp-files/fio.s: Cpp-files/fio.cpp.s
 
 # target to generate assembly for a file
 Cpp-files/fio.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/Cpp-files/fio.cpp.s
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/fio.cpp.s
 .PHONY : Cpp-files/fio.cpp.s
 
 Cpp-files/flightTime.o: Cpp-files/flightTime.cpp.o
@@ -183,7 +183,7 @@ Cpp-files/flightTime.o: Cpp-files/flightTime.cpp.o
 
 # target to build an object file
 Cpp-files/flightTime.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/Cpp-files/flightTime.cpp.o
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/flightTime.cpp.o
 .PHONY : Cpp-files/flightTime.cpp.o
 
 Cpp-files/flightTime.i: Cpp-files/flightTime.cpp.i
@@ -192,7 +192,7 @@ Cpp-files/flightTime.i: Cpp-files/flightTime.cpp.i
 
 # target to preprocess a source file
 Cpp-files/flightTime.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/Cpp-files/flightTime.cpp.i
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/flightTime.cpp.i
 .PHONY : Cpp-files/flightTime.cpp.i
 
 Cpp-files/flightTime.s: Cpp-files/flightTime.cpp.s
@@ -201,7 +201,7 @@ Cpp-files/flightTime.s: Cpp-files/flightTime.cpp.s
 
 # target to generate assembly for a file
 Cpp-files/flightTime.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/Cpp-files/flightTime.cpp.s
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/flightTime.cpp.s
 .PHONY : Cpp-files/flightTime.cpp.s
 
 Cpp-files/generator.o: Cpp-files/generator.cpp.o
@@ -210,7 +210,7 @@ Cpp-files/generator.o: Cpp-files/generator.cpp.o
 
 # target to build an object file
 Cpp-files/generator.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/Cpp-files/generator.cpp.o
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/generator.cpp.o
 .PHONY : Cpp-files/generator.cpp.o
 
 Cpp-files/generator.i: Cpp-files/generator.cpp.i
@@ -219,7 +219,7 @@ Cpp-files/generator.i: Cpp-files/generator.cpp.i
 
 # target to preprocess a source file
 Cpp-files/generator.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/Cpp-files/generator.cpp.i
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/generator.cpp.i
 .PHONY : Cpp-files/generator.cpp.i
 
 Cpp-files/generator.s: Cpp-files/generator.cpp.s
@@ -228,7 +228,7 @@ Cpp-files/generator.s: Cpp-files/generator.cpp.s
 
 # target to generate assembly for a file
 Cpp-files/generator.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/Cpp-files/generator.cpp.s
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/generator.cpp.s
 .PHONY : Cpp-files/generator.cpp.s
 
 Cpp-files/passenger.o: Cpp-files/passenger.cpp.o
@@ -237,7 +237,7 @@ Cpp-files/passenger.o: Cpp-files/passenger.cpp.o
 
 # target to build an object file
 Cpp-files/passenger.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/Cpp-files/passenger.cpp.o
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/passenger.cpp.o
 .PHONY : Cpp-files/passenger.cpp.o
 
 Cpp-files/passenger.i: Cpp-files/passenger.cpp.i
@@ -246,7 +246,7 @@ Cpp-files/passenger.i: Cpp-files/passenger.cpp.i
 
 # target to preprocess a source file
 Cpp-files/passenger.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/Cpp-files/passenger.cpp.i
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/passenger.cpp.i
 .PHONY : Cpp-files/passenger.cpp.i
 
 Cpp-files/passenger.s: Cpp-files/passenger.cpp.s
@@ -255,7 +255,7 @@ Cpp-files/passenger.s: Cpp-files/passenger.cpp.s
 
 # target to generate assembly for a file
 Cpp-files/passenger.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/Cpp-files/passenger.cpp.s
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/passenger.cpp.s
 .PHONY : Cpp-files/passenger.cpp.s
 
 main.o: main.cpp.o
@@ -264,7 +264,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -273,7 +273,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -282,7 +282,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab_1.dir/build.make CMakeFiles/Lab_1.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -291,9 +291,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Lab_1"
+	@echo "... edit_cache"
+	@echo "... Lab_3"
 	@echo "... Cpp-files/ReadWriter.o"
 	@echo "... Cpp-files/ReadWriter.i"
 	@echo "... Cpp-files/ReadWriter.s"
