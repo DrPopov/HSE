@@ -55,3 +55,17 @@ ostream& operator<<(ostream& out, const Passenger& passenger){
     return out;
 }
 
+
+long long Passenger::hash_function_effective(string str,  int p = 31, int m = 31) {
+    long long hash = 0;
+    long long p_pow = 1;
+
+    for(char i : str){
+        hash += (i - 'a' + 1) * p_pow;
+        p_pow *= p;
+    }
+
+    hash %= m;
+
+    return hash;
+}

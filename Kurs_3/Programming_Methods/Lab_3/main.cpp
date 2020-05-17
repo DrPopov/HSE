@@ -15,7 +15,7 @@
  *
  * \file main.cpp
 *
-*  Фвйл с реализацией
+*  Файл с реализацией
  */
 
 #include <iostream>
@@ -30,6 +30,7 @@ using namespace std;
 
 int main() {
 
-
+    Passenger passenger = Passenger();
+    passenger.
     return 0;
 }

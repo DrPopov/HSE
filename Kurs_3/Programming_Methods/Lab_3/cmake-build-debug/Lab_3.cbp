@@ -114,6 +114,12 @@
 		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/sorts.h">
 			<Option target="Lab_3"/>
 		</Unit>
+		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/hash.cpp">
+			<Option target="Lab_3"/>
+		</Unit>
+		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/hash.h">
+			<Option target="Lab_3"/>
+		</Unit>
 		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/main.cpp">
 			<Option target="Lab_3"/>
 		</Unit>

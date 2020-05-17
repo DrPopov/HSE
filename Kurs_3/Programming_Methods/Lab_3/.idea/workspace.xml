@@ -11,7 +11,26 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e052751-279d-4e1c-b367-fae36bda6e38" name="Default Changelist" comment="" />
+    <list default="true" id="7e052751-279d-4e1c-b367-fae36bda6e38" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/hash.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hash.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab_1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp-files/fio.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp-files/fio.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp-files/passenger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp-files/passenger.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Headers/fio.h" beforeDir="false" afterPath="$PROJECT_DIR$/Headers/fio.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Headers/passenger.h" beforeDir="false" afterPath="$PROJECT_DIR$/Headers/passenger.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lab_3.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Lab_3.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +55,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -62,6 +87,8 @@
       <option name="presentableId" value="Default" />
       <updated>1589496353930</updated>
       <workItem from="1589496355292" duration="1471000" />
+      <workItem from="1589498880129" duration="1045000" />
+      <workItem from="1589576658450" duration="5123000" />
     </task>
     <servers />
   </component>
@@ -92,5 +119,9 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="114" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589497826749" />
+    <state x="2543" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1589578144172">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="237" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589578144172" />
   </component>
 </project>

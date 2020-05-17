@@ -15,6 +15,7 @@ private:
     string first_name;
     string second_name;
     string father_name;
+    string fio_for_hash = first_name + ' ' + second_name + ' '+ father_name;
 
 
 public:
@@ -37,6 +38,8 @@ public:
 
     string get_father_name() const; //! Получить отчество
     void set_father_name(string father_name);  //! Установить отчество
+
+    string get_fio_for_hash() const; //! Получить, склеенное ФИО, от которого в дальнейшем будется браться хеш
 
     //---------Operators overloading------------------------------------------------------------------------------------
 

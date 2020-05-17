@@ -4,7 +4,7 @@
 #pragma once // защита от двойного подключения заголовочного файла
 
 #include "../Headers/fio.h"
-#include "flightTime.h"
+#include "../Headers/flightTime.h"
 #include <string>
 #include <vector>
 #include <ctime>
@@ -23,6 +23,13 @@ private:
     int seat_number;
     FlightTime flight_data;
     Fio fio;
+    long long hash;
+
+    const int p = 31;
+
+
+
+
 
 
 public:
@@ -82,5 +89,11 @@ public:
     }
     friend ostream& operator << (ostream &out, const Passenger& passenger); //! Перегрузка оператора вывода <<
     //---------------------------------------------------------------------------------------------------------------------
+
+    /**
+    *
+    *  h(S)  =  S[0]  +  S[1] * P  +  S[2] * P^2  +  S[3] * P^3  +  ...  +  S[N] * P^N
+    */
+    long long hash_function_effective(string str, int p, int m);
 };
 

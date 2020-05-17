@@ -29,6 +29,9 @@ string Fio::get_father_name() const{
     return Fio::father_name;
 }
 
+string Fio::get_fio_for_hash() const{
+    return fio_for_hash;
+}
 
 void Fio::set_first_name(string first_name) {
     Fio::first_name = first_name;
@@ -43,6 +46,7 @@ void Fio::set_father_name(string father_name) {
     Fio::father_name = father_name;
 
 }
+
 
 ostream& operator<<(ostream& out, const Fio& person) {
     stringstream ss;

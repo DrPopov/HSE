@@ -258,6 +258,33 @@ Cpp-files/passenger.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/passenger.cpp.s
 .PHONY : Cpp-files/passenger.cpp.s
 
+hash.o: hash.cpp.o
+
+.PHONY : hash.o
+
+# target to build an object file
+hash.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/hash.cpp.o
+.PHONY : hash.cpp.o
+
+hash.i: hash.cpp.i
+
+.PHONY : hash.i
+
+# target to preprocess a source file
+hash.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/hash.cpp.i
+.PHONY : hash.cpp.i
+
+hash.s: hash.cpp.s
+
+.PHONY : hash.s
+
+# target to generate assembly for a file
+hash.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/hash.cpp.s
+.PHONY : hash.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -309,6 +336,9 @@ help:
 	@echo "... Cpp-files/passenger.o"
 	@echo "... Cpp-files/passenger.i"
 	@echo "... Cpp-files/passenger.s"
+	@echo "... hash.o"
+	@echo "... hash.i"
+	@echo "... hash.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
