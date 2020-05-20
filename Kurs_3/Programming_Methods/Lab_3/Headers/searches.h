@@ -6,96 +6,70 @@
 #include "ReadWriter.h"
 #include <chrono>
 
-int linearSearch(string filename, Fio key){
-    int elapsed_seconds;
-    std::chrono::time_point<std::chrono::system_clock> start, end;
+vector<Passenger> linearSearch(const vector<Passenger>& passengers, const Fio& key){
+    vector<Passenger> found_passengers;
 
+    for(auto & passenger : passengers){
 
-    ReadWriter readWriter = ReadWriter();
-
-    vector<Passenger> passengers = readWriter.readValues(filename);
-
-    start = std::chrono::system_clock::now();
-
-    for(int i = 0; i < passengers.size(); i++){
-
-        if(passengers[i].get_fio() == key){
-            end = std::chrono::system_clock::now();
-
-            elapsed_seconds = std::chrono::duration_cast<std::chrono::seconds> (end-start).count();
-
-            cout << "It was linear search! THe time is: " << elapsed_seconds << endl;
-
-            cout << "We find him! This passenger is on board! \nHis number is "  <<  i << endl;
-            cout << "Here it  is: " << passengers[i] << endl;
-
-
-
-            return i;
+        if(passenger.get_fio() == key){
+            found_passengers.push_back(passenger);
         }
 
     }
-    cout << "\n Ups, This passenger is NOT on board. Maybe next time" << endl;
 
-    end = std::chrono::system_clock::now();
+    // Вывод найденых пассажиров
+    cout << "It was linear search. Here are your passengers: \n";
+    for(auto & passenger : found_passengers){
+        cout << passenger;
+    }
 
-    elapsed_seconds = std::chrono::duration_cast<std::chrono::seconds> (end-start).count();
-
-    cout << "It was linear search! THe time is: " << elapsed_seconds << endl;
-    return -1;
+    return found_passengers;
 }
 
-int binarySearch(string filename, Fio key){
-    ReadWriter readWriter = ReadWriter();
+vector<Passenger> binarySearch(vector<Passenger> sorted_passengers, const Fio& key){
 
-    vector<Passenger> sorted_passengers = readWriter.readValues(filename);
-
-    int elapsed_seconds;
-    std::chrono::time_point<std::chrono::system_clock> start, end;
-
+    vector<Passenger> found_passengers;
 
     int left_border = 0;
     int right_border = sorted_passengers.size() - 1;
     int middle = ( left_border + right_border ) / 2;
     bool flag = false;
 
-
-
-    start = std::chrono::system_clock::now();
-
-
+    // Поиск певрого найденого элемента
     while((left_border < right_border) && !flag){
         middle = ( left_border + right_border ) / 2;
 
-        if(sorted_passengers[middle].get_fio() == key){flag = true;}
+        if(sorted_passengers[middle].get_fio() == key){flag = true;found_passengers.push_back(sorted_passengers[middle]);}
         if(sorted_passengers[middle].get_fio() > key){
             right_border = middle - 1;
         }
         else{left_border = middle + 1;}
     }
 
-
+    // При условиии, что найден хотя бы один элемент: начиная с середины идем влево до левой границы
+    int ind = middle;
     if(flag){
-        end = std::chrono::system_clock::now();
-
-        elapsed_seconds = std::chrono::duration_cast<std::chrono::seconds> (end-start).count();
-
-        cout << "\nIt was binary search! THe time is: " << elapsed_seconds << endl;
-
-        cout << "We find your passenger!\n His index is " << middle << endl;
-        cout << "Here it is " << sorted_passengers[right_border] << endl;
-
-        return middle;
-    }else{
-        end = std::chrono::system_clock::now();
-
-        elapsed_seconds = std::chrono::duration_cast<std::chrono::seconds> (end-start).count();
-
-        cout << "\nIt was binary search! THe time is: " << elapsed_seconds << endl;
-
-        cout << "\nUups, no such passenger on board:((";
-        return -1;
-
-
+        while(sorted_passengers[ind - 1].get_fio() == sorted_passengers[ind].get_fio()){
+            found_passengers.push_back(sorted_passengers[ind - 1]);
+            ind--;
+            if(ind == 0){break;}
+        }
     }
+
+    //При условиии, что найден хотя бы один элемент: начиная с середины идем вправо до правой границы
+    int ind_2 = middle;
+    if(flag){
+        while(sorted_passengers[ind_2 + 1].get_fio() == sorted_passengers[ind_2].get_fio()){
+            found_passengers.push_back(sorted_passengers[ind_2 + 1]);
+            ind_2++;
+            if(ind_2 == sorted_passengers.size() - 1){break;}
+        }
+    }
+
+    // Вывод найденных пассажиров
+    cout << "\nIt was binary search with presorted array! Here are you passengers: \n";
+    for(auto i : found_passengers){
+        cout << i;
+    }
+    return found_passengers;
 }

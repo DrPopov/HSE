@@ -18,19 +18,36 @@
 *  Файл с реализацией
  */
 
-#include <iostream>
-#include <string>
+
 #include "Headers/sorts.h"
-#include <chrono>
 #include "Headers/searches.h"
 #include "Headers/ReadWriter.h"
+#include "Headers/generator.h"
+#include <chrono>
+#include <iostream>
+#include <string>
 //#include <fstream>
 
 using namespace std;
 
 int main() {
 
-    Passenger passenger = Passenger();
-    passenger.
+    Generator generator = Generator();
+    ReadWriter readWriter = ReadWriter();
+
+    //int n;
+    //cin >> n;
+    //auto passengers = generator.generate_passengers(n);
+    //readWriter.writeValues("../raw_data/passengers_" + to_string(n) + ".txt", passengers);
+
+    auto passengers = readWriter.readValues("../raw_data/passengers_5.txt");
+
+
+    linearSearch(passengers, Fio("a", "a", "a"));
+
+    //auto sorted_passengers = HeapSort(passengers);
+    auto sorted_passengers = readWriter.readValues("../sorted_arrays/passengers_5.txt");
+
+    binarySearch(sorted_passengers,Fio("a", "a", "a") );
     return 0;
 }

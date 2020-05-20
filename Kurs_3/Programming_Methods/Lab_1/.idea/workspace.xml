@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated>
-      <config projectName="Lab_1" targetName="Lab_1" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
@@ -11,7 +9,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="554ce42b-4f3d-4a9e-a2c5-563e8117403d" name="Default Changelist" comment="" />
+    <list default="true" id="554ce42b-4f3d-4a9e-a2c5-563e8117403d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Voyaki/Kurs_3/СУБД_конец.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Voyaki/Kurs_3/СУБД_конец.docx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,19 +44,12 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Headers" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="Lab_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lab_1" TARGET_NAME="Lab_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lab_1" RUN_TARGET_NAME="Lab_1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -83,6 +76,7 @@
       <workItem from="1587500569114" duration="20000" />
       <workItem from="1587500638511" duration="118000" />
       <workItem from="1589495858471" duration="2441000" />
+      <workItem from="1589883418577" duration="139000" />
     </task>
     <task id="LOCAL-00001" summary="Last step">
       <created>1586186020531</created>
@@ -131,10 +125,11 @@
     <state x="542" y="139" key="CommitChangelistDialog2/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1586445444274" />
     <state x="2412" y="115" width="925" height="847" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586186020170" />
     <state x="542" y="139" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586269554382" />
-    <state x="2657" y="283" width="424" height="513" key="FileChooserDialogImpl" timestamp="1589495916418">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="778" y="303" width="424" height="513" key="FileChooserDialogImpl" timestamp="1589883501261">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="2657" y="283" width="424" height="513" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589495916418" />
+    <state x="778" y="303" width="424" height="513" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589883501261" />
     <state x="778" y="303" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1586771450148" />
     <state width="1874" height="375" key="GridCell.Tab.0.bottom" timestamp="1587500755813">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -200,10 +195,10 @@
     <state width="1874" height="420" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586062160873" />
     <state width="1807" height="407" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1586544140294" />
     <state width="1807" height="407" key="GridCell.Tab.1.right/67.27.3773.1053@67.27.3773.1053" timestamp="1586597145216" />
-    <state x="482" y="187" key="SettingsEditor" timestamp="1587028272870">
+    <state x="482" y="187" key="SettingsEditor" timestamp="1589883451982">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1587028272870" />
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589883451982" />
     <state x="662" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1586766024944">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

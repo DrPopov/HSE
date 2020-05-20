@@ -3,52 +3,7 @@
 //
 #include "passenger.h"
 
-/**
- *@brief - Алгритм сортировки пузыркем
- *
- *
- * @param passengers - пассажиры, которые должны быть отсортированы
- * @return - отсортированные пассажиры
- */
-vector<Passenger> BubbleSort(vector<Passenger> passengers) {
-    for(int i = 1; i < passengers.size(); i++){
-        for(int j = 0; j < passengers.size() - i; j++){
-            if(passengers[j + 1] < passengers[j]){
-                swap(passengers[j], passengers[j + 1]);
-            }
-
-        }
-
-    }
-    return passengers;
-
-}
-
-/**
- *@brief - Алгритм сортировки методом простых вставок
- *
- *
- * @param passengers - пассажиры, которые должны быть отсортированы
- * @return - отсортированные пассажиры
- */
-vector<Passenger> InsertionSort(vector<Passenger> passengers){
-    //vector<Passenger> out; //sorted passengers
-    Passenger  temp; // временная переменная для хранения значения элемента сортируемого массива
-
-    for (int i = 0; i < passengers.size(); ++i)
-    {
-        temp = passengers[i];
-        int j = i;
-        while (j > 0 && temp < passengers[j - 1])
-        {
-            passengers[j] = passengers[j - 1];
-            j--;
-        }
-        passengers[j] = temp;
-    }
-
-    return passengers;
-}
+using namespace std;
 
 /**
  *@brief - Метод построения бинарного дерева
@@ -62,10 +17,10 @@ void BiTree(vector<Passenger> &passengers, int n, int i){
     int l = 2 * i + 1;
     int r = 2 * i + 2;
 
-    if (l < n && passengers[l] > passengers[max])
+    if (l < n && passengers[l].get_fio() > passengers[max].get_fio())
         max = l;
 
-    if (r < n && passengers[r] > passengers[max])
+    if (r < n && passengers[r].get_fio() > passengers[max].get_fio())
         max = r;
 
     if (max != i) {

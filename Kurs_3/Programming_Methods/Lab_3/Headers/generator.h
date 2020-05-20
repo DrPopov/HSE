@@ -64,7 +64,7 @@ public:
      * @param n  Количество пассажиров
      * @return Вектор пассажиров
      */
-    static vector<Passenger> get_passengers(int n);
+    static vector<Passenger> generate_passengers(int n);
 
 
 

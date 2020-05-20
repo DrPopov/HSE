@@ -69,7 +69,7 @@ Passenger  Generator::generate_passenger(){
 
 }
 
-vector<Passenger> Generator::get_passengers(int n){
+vector<Passenger> Generator::generate_passengers(int n){
     vector<Passenger> people;
 
     for(int i = 0; i < n; i++){

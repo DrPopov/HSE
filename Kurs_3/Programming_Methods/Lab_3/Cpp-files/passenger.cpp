@@ -55,17 +55,26 @@ ostream& operator<<(ostream& out, const Passenger& passenger){
     return out;
 }
 
+// Код элемента умножается на 10 в степени его порядкового номера, начиная с 0
+int Passenger::bad_hash(string str) {
+    int h = 0;
 
-long long Passenger::hash_function_effective(string str,  int p = 31, int m = 31) {
-    long long hash = 0;
-    long long p_pow = 1;
-
-    for(char i : str){
-        hash += (i - 'a' + 1) * p_pow;
-        p_pow *= p;
+    for(int i = 0; i < str.size(); i++ ){
+        h += static_cast<int>(str[i]) * 10^i;
     }
-
-    hash %= m;
-
-    return hash;
+    return h;
 }
+
+
+/*
+int Passenger::good_hash(string *str) {
+    unsigned int h;
+    unsigned int i;
+
+    for(i = 0; i < str->size(); i++){
+        h += static_cast<unsigned char>(str);
+        h += (h << 1);
+    }
+    return h;
+}
+*/

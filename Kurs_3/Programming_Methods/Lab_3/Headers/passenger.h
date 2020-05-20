@@ -23,9 +23,9 @@ private:
     int seat_number;
     FlightTime flight_data;
     Fio fio;
-    long long hash;
+    //long long hash;
 
-    const int p = 31;
+    //const int p = 31;
 
 
 
@@ -90,10 +90,28 @@ public:
     friend ostream& operator << (ostream &out, const Passenger& passenger); //! Перегрузка оператора вывода <<
     //---------------------------------------------------------------------------------------------------------------------
 
+
     /**
-    *
-    *  h(S)  =  S[0]  +  S[1] * P  +  S[2] * P^2  +  S[3] * P^3  +  ...  +  S[N] * P^N
-    */
-    long long hash_function_effective(string str, int p, int m);
+     * @brief Выполняет хеширование строки str по "плохому" алгоритму с коллизиями
+     *
+     * @details: Алгоритм суммирует код элемента, умноженного на 10 в степени его порядкового номера
+     *
+     * Итоговая сумма- хеш
+     *
+     * @param str: Строка, которую надо захешировать
+     * @return: int хеш от строки str
+     */
+    int bad_hash(string str);
+
+
+    /**
+     * @brief Выполняет хеширование строки str по "хорошему" алгоритму с малым количеством коллизий
+     *
+     * @param str: Строка, которую надо захешировать
+     * @return: int хеш от строки str
+     */
+    int good_hash(string *str);
+
+
 };
 

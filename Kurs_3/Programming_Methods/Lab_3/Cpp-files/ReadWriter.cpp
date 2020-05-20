@@ -49,7 +49,7 @@ vector<Passenger> ReadWriter::readValues(string filename){
     if (!fin.is_open()) {
         cout << "\nI'm creating a new file! It's file is " << filename << endl;
         Generator generator = Generator();
-        auto passengers = generator.get_passengers(n);
+        auto passengers = generator.generate_passengers(n);
 
         ReadWriter readWriter = ReadWriter();
         readWriter.writeValues(filename, passengers);

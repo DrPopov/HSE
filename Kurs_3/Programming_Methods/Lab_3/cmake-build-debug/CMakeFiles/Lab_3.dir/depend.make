@@ -25,6 +25,9 @@ CMakeFiles/Lab_3.dir/Cpp-files/passenger.cpp.o: ../Headers/fio.h
 CMakeFiles/Lab_3.dir/Cpp-files/passenger.cpp.o: ../Headers/flightTime.h
 CMakeFiles/Lab_3.dir/Cpp-files/passenger.cpp.o: ../Headers/passenger.h
 
+CMakeFiles/Lab_3.dir/hash.cpp.o: ../hash.cpp
+CMakeFiles/Lab_3.dir/hash.cpp.o: ../hash.h
+
 CMakeFiles/Lab_3.dir/main.cpp.o: ../Headers/ReadWriter.h
 CMakeFiles/Lab_3.dir/main.cpp.o: ../Headers/fio.h
 CMakeFiles/Lab_3.dir/main.cpp.o: ../Headers/flightTime.h

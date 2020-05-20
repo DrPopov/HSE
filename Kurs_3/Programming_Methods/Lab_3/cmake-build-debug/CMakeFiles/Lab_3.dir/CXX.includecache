@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/ReadWriter.cpp
-../Headers/ReadWriter.h
-/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/ReadWriter.h
-
 /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/ReadWriter.h
 fio.h
 /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/fio.h
@@ -53,7 +49,7 @@ vector
 /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/passenger.h
 ../Headers/fio.h
 /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/fio.h
-flightTime.h
+../Headers/flightTime.h
 /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/flightTime.h
 string
 -
@@ -75,16 +71,18 @@ passenger.h
 /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/passenger.h
 
 /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/main.cpp
-iostream
--
-string
--
 Headers/sorts.h
 /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/sorts.h
-chrono
--
 Headers/searches.h
 /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/searches.h
 Headers/ReadWriter.h
 /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/ReadWriter.h
+Headers/generator.h
+/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/generator.h
+chrono
+-
+iostream
+-
+string
+-
 
