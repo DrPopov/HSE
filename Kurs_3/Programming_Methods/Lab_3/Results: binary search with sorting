@@ -1,0 +1,11 @@
+					It was binary search!
+Amount of passengers: 100       The time of searching: 432256
+Amount of passengers: 500       The time of searching: 2522038
+Amount of passengers: 1000      The time of searching: 6525650
+Amount of passengers: 5000      The time of searching: 57505060
+Amount of passengers: 10000     The time of searching: 94451670
+Amount of passengers: 15000     The time of searching: 147516137
+Amount of passengers: 25000     The time of searching: 264771348
+Amount of passengers: 50000     The time of searching: 619631197
+Amount of passengers: 75000     The time of searching: 856277836
+Amount of passengers: 100000    The time of searching: 1260054082

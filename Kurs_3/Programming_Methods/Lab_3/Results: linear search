@@ -1,0 +1,11 @@
+It was Linear search!
+Amount of passengers: 100       The time of searching: 32955
+Amount of passengers: 500       The time of searching: 76859
+Amount of passengers: 1000      The time of searching: 136618
+Amount of passengers: 5000      The time of searching: 1693578
+Amount of passengers: 10000     The time of searching: 1635351
+Amount of passengers: 15000     The time of searching: 2099103
+Amount of passengers: 25000     The time of searching: 8911500
+Amount of passengers: 50000     The time of searching: 12963039
+Amount of passengers: 75000     The time of searching: 22907163
+Amount of passengers: 100000    The time of searching: 22939179

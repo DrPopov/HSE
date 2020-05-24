@@ -6,6 +6,8 @@
 #include "fio.h"
 #include "flightTime.h"
 #include "passenger.h"
+#include "hash.h"
+
 #include <string>
 #include <fstream>
 #include <iostream>
@@ -57,14 +59,14 @@ public:
      *
      * @return  Случайного пассажира
      */
-    static Passenger generate_passenger();
+    static Passenger generate_passenger(bool bad_hash_bool = false);
 
     /**
      *
      * @param n  Количество пассажиров
      * @return Вектор пассажиров
      */
-    static vector<Passenger> generate_passengers(int n);
+    static vector<Passenger> generate_passengers(int n, bool bad_hash_bool = false);
 
 
 

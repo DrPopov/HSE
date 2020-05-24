@@ -1,0 +1,11 @@
+					It was Unordered_map search!
+Amount of passengers: 100       The time of searching: 55248
+Amount of passengers: 500       The time of searching: 29028
+Amount of passengers: 1000      The time of searching: 30524
+Amount of passengers: 5000      The time of searching: 42832
+Amount of passengers: 10000     The time of searching: 29550
+Amount of passengers: 15000     The time of searching: 29968
+Amount of passengers: 25000     The time of searching: 32013
+Amount of passengers: 50000     The time of searching: 29586
+Amount of passengers: 75000     The time of searching: 36593
+Amount of passengers: 100000    The time of searching: 437335

@@ -17,19 +17,11 @@ using namespace std;
  */
 class Passenger{
 private:
-
-
     int flight_number;
     int seat_number;
     FlightTime flight_data;
     Fio fio;
-    //long long hash;
-
-    //const int p = 31;
-
-
-
-
+    int hash;
 
 
 public:
@@ -40,7 +32,7 @@ public:
      * @param fio ФИО пассажира
      * @param seat_number Посадочное место
      */
-    Passenger(FlightTime flight_data, int flight_number, Fio fio, int seat_number);
+    Passenger(Fio fio, FlightTime flight_data, int flight_number, int seat_number, bool bad_hash_bool = false);
     Passenger(); //! Конструктор по умолчанию
 
 
@@ -60,6 +52,12 @@ public:
     void set_seat_number(int seat); //! Получение посадочного места
     int get_seat_number() const; //! Установка посадочного места
 
+    //Установка и получение хорошего хеша ФИО
+    void set_good_hash(Fio fio); //! Установка хеша пароля
+    void set_bad_hash(Fio fio); //! Установка хеша пароля
+    void set_hash(unsigned long long hash); //! Установка хеша
+    unsigned long long get_hash() const; //! Получение хеша пароля
+
 
     //-------Operators overloading------------------------------------------------------------------------------------------
     bool operator == (Passenger const& other){ //! Перегрузка оператора ==
@@ -69,12 +67,12 @@ public:
         return !(this->operator==(other));
     }
     bool operator <  (Passenger const& other){ //! Перегрузка оператора <
-        if(this->flight_data < other.flight_data){return true;}
+        if(this->fio < other.fio){return true;}
+        else if(this->fio > other.fio){return false;}
+        else if(this->flight_data < other.flight_data){return true;}
         else if(this->flight_data > other.flight_data){return false;}
         else if(this->flight_number < other.flight_number){return true;}
         else if(this->flight_number > other.flight_number){return false;}
-        else if(this->fio < other.fio){return true;}
-        else if(this->fio > other.fio){return false;}
         else return this->seat_number < other.seat_number;
 
     }
@@ -91,26 +89,6 @@ public:
     //---------------------------------------------------------------------------------------------------------------------
 
 
-    /**
-     * @brief Выполняет хеширование строки str по "плохому" алгоритму с коллизиями
-     *
-     * @details: Алгоритм суммирует код элемента, умноженного на 10 в степени его порядкового номера
-     *
-     * Итоговая сумма- хеш
-     *
-     * @param str: Строка, которую надо захешировать
-     * @return: int хеш от строки str
-     */
-    int bad_hash(string str);
-
-
-    /**
-     * @brief Выполняет хеширование строки str по "хорошему" алгоритму с малым количеством коллизий
-     *
-     * @param str: Строка, которую надо захешировать
-     * @return: int хеш от строки str
-     */
-    int good_hash(string *str);
 
 
 };

@@ -15,7 +15,6 @@ private:
     string first_name;
     string second_name;
     string father_name;
-    string fio_for_hash = first_name + ' ' + second_name + ' '+ father_name;
 
 
 public:
@@ -39,7 +38,6 @@ public:
     string get_father_name() const; //! Получить отчество
     void set_father_name(string father_name);  //! Установить отчество
 
-    string get_fio_for_hash() const; //! Получить, склеенное ФИО, от которого в дальнейшем будется браться хеш
 
     //---------Operators overloading------------------------------------------------------------------------------------
 
@@ -51,13 +49,13 @@ public:
         return !(this->operator == (other));
     }
     bool operator <  (Fio const& other){ //! Перегрузка оператора <
-        if(this->second_name < other.second_name) {
-            return true;
-        }else if(this->second_name > other.second_name) {
-            return false;
-        }else if(this-> first_name < other.first_name){
+        if(this-> first_name < other.first_name){
             return true;
         }else if(this-> first_name > other.first_name) {
+            return false;
+        }else if(this->second_name < other.second_name) {
+            return true;
+        }else if(this->second_name > other.second_name) {
             return false;
         }else if(this-> father_name < other.father_name) {
             return true;

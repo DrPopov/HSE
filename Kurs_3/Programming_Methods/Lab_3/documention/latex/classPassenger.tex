@@ -1,0 +1,148 @@
+\hypertarget{classPassenger}{}\doxysection{Класс Passenger}
+\label{classPassenger}\index{Passenger@{Passenger}}
+
+
+
+\begin{DoxyItemize}
+\item Класс, описывающий одного пассажира 
+\end{DoxyItemize} 
+
+
+
+
+{\ttfamily \#include $<$passenger.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPassenger_a38d18ecc4334ce263b24773844ce193a}{Passenger}} (\mbox{\hyperlink{classFio}{Fio}} fio, \mbox{\hyperlink{classFlightTime}{Flight\+Time}} flight\+\_\+data, int flight\+\_\+number, int seat\+\_\+number, bool bad\+\_\+hash\+\_\+bool=false)
+\item 
+\mbox{\Hypertarget{classPassenger_aad2f0e2c033195b908e2dfe41ed38571}\label{classPassenger_aad2f0e2c033195b908e2dfe41ed38571}} 
+void \mbox{\hyperlink{classPassenger_aad2f0e2c033195b908e2dfe41ed38571}{set\+\_\+flight\+\_\+data}} (\mbox{\hyperlink{classFlightTime}{Flight\+Time}} data)
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPassenger_a383822bbbdc63f704013f42db12f77c0}\label{classPassenger_a383822bbbdc63f704013f42db12f77c0}} 
+\mbox{\hyperlink{classFlightTime}{Flight\+Time}} \mbox{\hyperlink{classPassenger_a383822bbbdc63f704013f42db12f77c0}{get\+\_\+flight\+\_\+data}} () const
+\begin{DoxyCompactList}\small\item\em Получение даты рейса пассажира \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPassenger_a645506b667674af702ac1a493aa7493f}\label{classPassenger_a645506b667674af702ac1a493aa7493f}} 
+void \mbox{\hyperlink{classPassenger_a645506b667674af702ac1a493aa7493f}{set\+\_\+flight\+\_\+number}} (int num)
+\begin{DoxyCompactList}\small\item\em Установка даты рейса пассажира \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPassenger_ab59657eb9da85248ac65457fe03c9b8d}\label{classPassenger_ab59657eb9da85248ac65457fe03c9b8d}} 
+int \mbox{\hyperlink{classPassenger_ab59657eb9da85248ac65457fe03c9b8d}{get\+\_\+flight\+\_\+number}} () const
+\begin{DoxyCompactList}\small\item\em Получение номера рейса пассажира \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPassenger_abc46c76dcc1381597f0004ed23ecd975}\label{classPassenger_abc46c76dcc1381597f0004ed23ecd975}} 
+void \mbox{\hyperlink{classPassenger_abc46c76dcc1381597f0004ed23ecd975}{set\+\_\+fio}} (\mbox{\hyperlink{classFio}{Fio}} fio)
+\begin{DoxyCompactList}\small\item\em Установка номера рейса пассажира \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPassenger_a4c4c01f3309c3e01d637c4d61c5e8893}\label{classPassenger_a4c4c01f3309c3e01d637c4d61c5e8893}} 
+\mbox{\hyperlink{classFio}{Fio}} \mbox{\hyperlink{classPassenger_a4c4c01f3309c3e01d637c4d61c5e8893}{get\+\_\+fio}} () const
+\begin{DoxyCompactList}\small\item\em Получение ФИО пассажира \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPassenger_ad6ccd84596c8f8be7f8539cfb337ad33}\label{classPassenger_ad6ccd84596c8f8be7f8539cfb337ad33}} 
+void \mbox{\hyperlink{classPassenger_ad6ccd84596c8f8be7f8539cfb337ad33}{set\+\_\+seat\+\_\+number}} (int seat)
+\begin{DoxyCompactList}\small\item\em Установка ФИО пассажира \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPassenger_a51d7b3fe18a5fb5dd442d537bd694490}\label{classPassenger_a51d7b3fe18a5fb5dd442d537bd694490}} 
+int \mbox{\hyperlink{classPassenger_a51d7b3fe18a5fb5dd442d537bd694490}{get\+\_\+seat\+\_\+number}} () const
+\begin{DoxyCompactList}\small\item\em Получение посадочного места \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPassenger_a80c6eaeb0f8e3aae785f76ca4f70114b}\label{classPassenger_a80c6eaeb0f8e3aae785f76ca4f70114b}} 
+void \mbox{\hyperlink{classPassenger_a80c6eaeb0f8e3aae785f76ca4f70114b}{set\+\_\+good\+\_\+hash}} (\mbox{\hyperlink{classFio}{Fio}} fio)
+\begin{DoxyCompactList}\small\item\em Установка посадочного места \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPassenger_a6f56905238b381c76517ebc9f8e10432}\label{classPassenger_a6f56905238b381c76517ebc9f8e10432}} 
+void \mbox{\hyperlink{classPassenger_a6f56905238b381c76517ebc9f8e10432}{set\+\_\+bad\+\_\+hash}} (\mbox{\hyperlink{classFio}{Fio}} fio)
+\begin{DoxyCompactList}\small\item\em Установка хеша пароля \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPassenger_a7cf20ab55140e03bc0bc14df5adb2a5e}\label{classPassenger_a7cf20ab55140e03bc0bc14df5adb2a5e}} 
+void \mbox{\hyperlink{classPassenger_a7cf20ab55140e03bc0bc14df5adb2a5e}{set\+\_\+hash}} (unsigned long long hash)
+\begin{DoxyCompactList}\small\item\em Установка хеша пароля \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPassenger_a6a363fcf68e37f108c1fbda09c280428}\label{classPassenger_a6a363fcf68e37f108c1fbda09c280428}} 
+unsigned long long \mbox{\hyperlink{classPassenger_a6a363fcf68e37f108c1fbda09c280428}{get\+\_\+hash}} () const
+\begin{DoxyCompactList}\small\item\em Установка хеша \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPassenger_a0aee10cb900d0b0022151f1763f4e18c}{operator==}} (\mbox{\hyperlink{classPassenger}{Passenger}} const \&other)
+\begin{DoxyCompactList}\small\item\em Получение хеша пароля \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPassenger_a256b386478e5feb20bdb353965db3a0d}{operator!=}} (\mbox{\hyperlink{classPassenger}{Passenger}} const \&other)
+\item 
+bool \mbox{\hyperlink{classPassenger_a10a8310e19b1e278f337ca126e16b0f9}{operator$<$}} (\mbox{\hyperlink{classPassenger}{Passenger}} const \&other)
+\item 
+bool \mbox{\hyperlink{classPassenger_a8a790c8598f9c3e29894f0181b1673f0}{operator$>$}} (\mbox{\hyperlink{classPassenger}{Passenger}} const \&other)
+\item 
+bool \mbox{\hyperlink{classPassenger_a0a388f0a1aa473d19ba6b066b7dc867f}{operator$<$=}} (\mbox{\hyperlink{classPassenger}{Passenger}} const \&other)
+\item 
+bool \mbox{\hyperlink{classPassenger_ade69af14a0ea3ad2872a8851ec67b7d6}{operator$>$=}} (\mbox{\hyperlink{classPassenger}{Passenger}} const \&other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPassenger_a6c2e35fe304a0ad4bd81967467f10184}\label{classPassenger_a6c2e35fe304a0ad4bd81967467f10184}} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&out, const \mbox{\hyperlink{classPassenger}{Passenger}} \&passenger)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+
+\begin{DoxyItemize}
+\item Класс, описывающий одного пассажира 
+\end{DoxyItemize}
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classPassenger_a38d18ecc4334ce263b24773844ce193a}\label{classPassenger_a38d18ecc4334ce263b24773844ce193a}} 
+\index{Passenger@{Passenger}!Passenger@{Passenger}}
+\index{Passenger@{Passenger}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{Passenger()}{Passenger()}}
+{\footnotesize\ttfamily Passenger\+::\+Passenger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFio}{Fio}}}]{fio,  }\item[{\mbox{\hyperlink{classFlightTime}{Flight\+Time}}}]{flight\+\_\+data,  }\item[{int}]{flight\+\_\+number,  }\item[{int}]{seat\+\_\+number,  }\item[{bool}]{bad\+\_\+hash\+\_\+bool = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Аргументы}
+{\em flight\+\_\+data} & Даты рейса \\
+\hline
+{\em flight\+\_\+number} & Номер рейса \\
+\hline
+{\em fio} & ФИО пассажира \\
+\hline
+{\em seat\+\_\+number} & Посадочное место \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classPassenger_a256b386478e5feb20bdb353965db3a0d}\label{classPassenger_a256b386478e5feb20bdb353965db3a0d}} 
+\index{Passenger@{Passenger}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Passenger\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPassenger}{Passenger}} const \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Перегрузка оператора !=\mbox{\Hypertarget{classPassenger_a10a8310e19b1e278f337ca126e16b0f9}\label{classPassenger_a10a8310e19b1e278f337ca126e16b0f9}} 
+\index{Passenger@{Passenger}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Passenger\+::operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPassenger}{Passenger}} const \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Перегрузка оператора $<$\mbox{\Hypertarget{classPassenger_a0a388f0a1aa473d19ba6b066b7dc867f}\label{classPassenger_a0a388f0a1aa473d19ba6b066b7dc867f}} 
+\index{Passenger@{Passenger}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Passenger\+::operator$<$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPassenger}{Passenger}} const \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Перегрузка оператора $<$=\mbox{\Hypertarget{classPassenger_a0aee10cb900d0b0022151f1763f4e18c}\label{classPassenger_a0aee10cb900d0b0022151f1763f4e18c}} 
+\index{Passenger@{Passenger}!operator==@{operator==}}
+\index{operator==@{operator==}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Passenger\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPassenger}{Passenger}} const \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение хеша пароля 
+
+Перегрузка оператора ==\mbox{\Hypertarget{classPassenger_a8a790c8598f9c3e29894f0181b1673f0}\label{classPassenger_a8a790c8598f9c3e29894f0181b1673f0}} 
+\index{Passenger@{Passenger}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Passenger\+::operator$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPassenger}{Passenger}} const \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Перегрузка оператора $>$\mbox{\Hypertarget{classPassenger_ade69af14a0ea3ad2872a8851ec67b7d6}\label{classPassenger_ade69af14a0ea3ad2872a8851ec67b7d6}} 
+\index{Passenger@{Passenger}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Passenger\+::operator$>$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPassenger}{Passenger}} const \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Перегрузка оператора $>$=
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Headers/passenger.\+h\item 
+Cpp-\/files/passenger.\+cpp\end{DoxyCompactItemize}

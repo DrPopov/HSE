@@ -1,0 +1,41 @@
+\hypertarget{classhashTable}{}\doxysection{Класс hash\+Table}
+\label{classhashTable}\index{hashTable@{hashTable}}
+
+
+Хеш-\/таблица, хранящая пары ключ-\/значение, где ключ -\/ это ФИО пассажира, а значение -\/ хеш от этого ФИО  
+
+
+
+
+{\ttfamily \#include $<$hash\+Table.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classhashTable_af1efaa54a936af631c04814e79471fd5}\label{classhashTable_af1efaa54a936af631c04814e79471fd5}} 
+void \mbox{\hyperlink{classhashTable_af1efaa54a936af631c04814e79471fd5}{make\+\_\+hash\+Table}} (map$<$ unsigned long long, vector$<$ \mbox{\hyperlink{classPassenger}{Passenger}} $>$$>$ \&hash\+\_\+table, vector$<$ \mbox{\hyperlink{classPassenger}{Passenger}} $>$ passengers, bool bad\+\_\+hash\+\_\+bool=false)
+\begin{DoxyCompactList}\small\item\em Ф-\/ия составления хеш-\/таблицы(map) из заданного вектора и подсчета кол-\/ва коллизий \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classhashTable_a602fc1b4073cc7b6ae83172303812b1a}\label{classhashTable_a602fc1b4073cc7b6ae83172303812b1a}} 
+void \mbox{\hyperlink{classhashTable_a602fc1b4073cc7b6ae83172303812b1a}{make\+\_\+hash\+Table}} (unordered\+\_\+map$<$ unsigned long long, vector$<$ \mbox{\hyperlink{classPassenger}{Passenger}} $>$$>$ \&hash\+\_\+table, vector$<$ \mbox{\hyperlink{classPassenger}{Passenger}} $>$ passengers, bool bad\+\_\+hash\+\_\+bool=false)
+\begin{DoxyCompactList}\small\item\em Ф-\/ия составления хеш-\/таблицы(unordered\+\_\+map) из заданного вектора и подсчета кол-\/ва коллизий \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classhashTable_ac7cca245cbccb2845796a495e4b6dd1f}\label{classhashTable_ac7cca245cbccb2845796a495e4b6dd1f}} 
+void \mbox{\hyperlink{classhashTable_ac7cca245cbccb2845796a495e4b6dd1f}{display\+Hash}} (map$<$ unsigned long long, vector$<$ \mbox{\hyperlink{classPassenger}{Passenger}} $>$$>$ hash\+\_\+table)
+\begin{DoxyCompactList}\small\item\em Ф-\/ия вывода хеш-\/таблицы(map) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classhashTable_a27f8f5de5b0b399f1ac8291fcb996ecf}\label{classhashTable_a27f8f5de5b0b399f1ac8291fcb996ecf}} 
+void \mbox{\hyperlink{classhashTable_a27f8f5de5b0b399f1ac8291fcb996ecf}{display\+Hash}} (unordered\+\_\+map$<$ unsigned long long, vector$<$ \mbox{\hyperlink{classPassenger}{Passenger}} $>$$>$ hash\+\_\+table)
+\begin{DoxyCompactList}\small\item\em Ф-\/ия вывода хеш-\/таблицы(unordered\+\_\+map) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classhashTable_a57b8995ce3850ff67f497f31a6c95a7e}\label{classhashTable_a57b8995ce3850ff67f497f31a6c95a7e}} 
+vector$<$ \mbox{\hyperlink{classPassenger}{Passenger}} $>$ \mbox{\hyperlink{classhashTable_a57b8995ce3850ff67f497f31a6c95a7e}{find}} (unordered\+\_\+map$<$ unsigned long long, vector$<$ \mbox{\hyperlink{classPassenger}{Passenger}} $>$$>$ \&hash\+\_\+table, const \mbox{\hyperlink{classFio}{Fio}} \&key, bool bad\+\_\+hash\+\_\+bool=false)
+\begin{DoxyCompactList}\small\item\em Операция поиска по ключу в unordered\+\_\+map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classhashTable_ad70db3be6308c6293c44d2069973f65e}\label{classhashTable_ad70db3be6308c6293c44d2069973f65e}} 
+vector$<$ \mbox{\hyperlink{classPassenger}{Passenger}} $>$ \mbox{\hyperlink{classhashTable_ad70db3be6308c6293c44d2069973f65e}{find}} (map$<$ unsigned long long, vector$<$ \mbox{\hyperlink{classPassenger}{Passenger}} $>$$>$ \&hash\+\_\+table, const \mbox{\hyperlink{classFio}{Fio}} \&key, bool bad\+\_\+hash\+\_\+bool=false)
+\begin{DoxyCompactList}\small\item\em Операция поиска по ключу в map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Хеш-\/таблица, хранящая пары ключ-\/значение, где ключ -\/ это ФИО пассажира, а значение -\/ хеш от этого ФИО 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Headers/hash\+Table.\+h\item 
+Cpp-\/files/hash\+Table.\+cpp\end{DoxyCompactItemize}

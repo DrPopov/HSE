@@ -135,18 +135,57 @@ CMakeFiles/Lab_3.dir/Cpp-files/ReadWriter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab_3.dir/Cpp-files/ReadWriter.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/ReadWriter.cpp -o CMakeFiles/Lab_3.dir/Cpp-files/ReadWriter.cpp.s
 
-CMakeFiles/Lab_3.dir/hash.cpp.o: CMakeFiles/Lab_3.dir/flags.make
-CMakeFiles/Lab_3.dir/hash.cpp.o: ../hash.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Lab_3.dir/hash.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab_3.dir/hash.cpp.o -c /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/hash.cpp
+CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.o: CMakeFiles/Lab_3.dir/flags.make
+CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.o: ../Cpp-files/hash.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.o -c /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/hash.cpp
 
-CMakeFiles/Lab_3.dir/hash.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab_3.dir/hash.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/hash.cpp > CMakeFiles/Lab_3.dir/hash.cpp.i
+CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/hash.cpp > CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.i
 
-CMakeFiles/Lab_3.dir/hash.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab_3.dir/hash.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/hash.cpp -o CMakeFiles/Lab_3.dir/hash.cpp.s
+CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/hash.cpp -o CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.s
+
+CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.o: CMakeFiles/Lab_3.dir/flags.make
+CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.o: ../Cpp-files/sorts.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.o -c /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/sorts.cpp
+
+CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/sorts.cpp > CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.i
+
+CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/sorts.cpp -o CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.s
+
+CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.o: CMakeFiles/Lab_3.dir/flags.make
+CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.o: ../Cpp-files/searches.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.o -c /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/searches.cpp
+
+CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/searches.cpp > CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.i
+
+CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/searches.cpp -o CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.s
+
+CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.o: CMakeFiles/Lab_3.dir/flags.make
+CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.o: ../Cpp-files/hashTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.o -c /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/hashTable.cpp
+
+CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/hashTable.cpp > CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.i
+
+CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/hashTable.cpp -o CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.s
 
 # Object files for target Lab_3
 Lab_3_OBJECTS = \
@@ -156,7 +195,10 @@ Lab_3_OBJECTS = \
 "CMakeFiles/Lab_3.dir/Cpp-files/generator.cpp.o" \
 "CMakeFiles/Lab_3.dir/Cpp-files/passenger.cpp.o" \
 "CMakeFiles/Lab_3.dir/Cpp-files/ReadWriter.cpp.o" \
-"CMakeFiles/Lab_3.dir/hash.cpp.o"
+"CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.o" \
+"CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.o" \
+"CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.o" \
+"CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.o"
 
 # External object files for target Lab_3
 Lab_3_EXTERNAL_OBJECTS =
@@ -167,10 +209,13 @@ Lab_3: CMakeFiles/Lab_3.dir/Cpp-files/flightTime.cpp.o
 Lab_3: CMakeFiles/Lab_3.dir/Cpp-files/generator.cpp.o
 Lab_3: CMakeFiles/Lab_3.dir/Cpp-files/passenger.cpp.o
 Lab_3: CMakeFiles/Lab_3.dir/Cpp-files/ReadWriter.cpp.o
-Lab_3: CMakeFiles/Lab_3.dir/hash.cpp.o
+Lab_3: CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.o
+Lab_3: CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.o
+Lab_3: CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.o
+Lab_3: CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.o
 Lab_3: CMakeFiles/Lab_3.dir/build.make
 Lab_3: CMakeFiles/Lab_3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Lab_3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Lab_3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lab_3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

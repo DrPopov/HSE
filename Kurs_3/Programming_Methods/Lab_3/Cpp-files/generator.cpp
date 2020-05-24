@@ -6,6 +6,10 @@
 #include "../Headers/flightTime.h"
 #include "../Headers/passenger.h"
 #include "../Headers/generator.h"
+#include "../Headers/hash.h"
+
+
+
 #include <string>
 #include <iostream>
 #include <cstdlib>
@@ -28,15 +32,15 @@ Fio  Generator::random_fio(){
     string temp2;
     string temp3;
 
-    for(int j = 0; j <= rand()% 9; j++ ){
+    for(int j = 0; j <= rand()  % 3; j++ ){
         temp1.push_back(char('a' +   rand() % ('z' - 'a')));
     }
 
-    for(int j = 0; j <= rand()% 9; j++ ){
+    for(int j = 0; j <= rand() % 3; j++ ){
         temp2.push_back(char('a'   + rand() % ('z' - 'a')));
     }
 
-    for(int j = 0; j <= rand()% 9; j++ ){
+    for(int j = 0; j <= rand() % 3; j++ ){
         temp3.push_back(char('a'   + rand() % ('z' - 'a')));
     }
 
@@ -56,24 +60,32 @@ FlightTime  Generator::random_flight_data(){
 }
 
 
-Passenger  Generator::generate_passenger(){
+Passenger  Generator::generate_passenger(bool bad_hash_bool){
     Generator generator;
-
     Passenger passenger;
 
-    passenger.set_flight_number(generator.random_flight_number());
-    passenger.set_seat_number(generator.random_seat_number());
     passenger.set_fio(generator.random_fio());
     passenger.set_flight_data(generator.random_flight_data());
+    passenger.set_flight_number(generator.random_flight_number());
+    passenger.set_seat_number(generator.random_seat_number());
+
+    //Passenger passenger = Passenger(Fio(generator.random_fio()), FlightTime(generator.random_flight_data()), generator.random_flight_number(), generator.random_seat_number(), bad_hash_bool);
+
+    if(bad_hash_bool){
+        passenger.set_bad_hash(passenger.get_fio());
+    } else{
+        passenger.set_good_hash(passenger.get_fio());
+    }
+
     return passenger;
 
 }
 
-vector<Passenger> Generator::generate_passengers(int n){
+vector<Passenger> Generator::generate_passengers(int n, bool bad_hash_bool){
     vector<Passenger> people;
 
     for(int i = 0; i < n; i++){
-        people.push_back(generate_passenger());
+        people.push_back(generate_passenger(bad_hash_bool));
     }
 
     return people;

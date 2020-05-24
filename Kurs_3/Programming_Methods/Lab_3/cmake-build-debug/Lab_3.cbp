@@ -96,13 +96,31 @@
 		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/generator.cpp">
 			<Option target="Lab_3"/>
 		</Unit>
+		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/hash.cpp">
+			<Option target="Lab_3"/>
+		</Unit>
+		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/hashTable.cpp">
+			<Option target="Lab_3"/>
+		</Unit>
 		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/passenger.cpp">
+			<Option target="Lab_3"/>
+		</Unit>
+		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/searches.cpp">
+			<Option target="Lab_3"/>
+		</Unit>
+		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Cpp-files/sorts.cpp">
 			<Option target="Lab_3"/>
 		</Unit>
 		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/ReadWriter.h">
 			<Option target="Lab_3"/>
 		</Unit>
 		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/generator.h">
+			<Option target="Lab_3"/>
+		</Unit>
+		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/hash.h">
+			<Option target="Lab_3"/>
+		</Unit>
+		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/hashTable.h">
 			<Option target="Lab_3"/>
 		</Unit>
 		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/passenger.h">
@@ -112,12 +130,6 @@
 			<Option target="Lab_3"/>
 		</Unit>
 		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/Headers/sorts.h">
-			<Option target="Lab_3"/>
-		</Unit>
-		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/hash.cpp">
-			<Option target="Lab_3"/>
-		</Unit>
-		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/hash.h">
 			<Option target="Lab_3"/>
 		</Unit>
 		<Unit filename="/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_3/main.cpp">

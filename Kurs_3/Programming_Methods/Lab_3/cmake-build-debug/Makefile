@@ -231,6 +231,60 @@ Cpp-files/generator.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/generator.cpp.s
 .PHONY : Cpp-files/generator.cpp.s
 
+Cpp-files/hash.o: Cpp-files/hash.cpp.o
+
+.PHONY : Cpp-files/hash.o
+
+# target to build an object file
+Cpp-files/hash.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.o
+.PHONY : Cpp-files/hash.cpp.o
+
+Cpp-files/hash.i: Cpp-files/hash.cpp.i
+
+.PHONY : Cpp-files/hash.i
+
+# target to preprocess a source file
+Cpp-files/hash.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.i
+.PHONY : Cpp-files/hash.cpp.i
+
+Cpp-files/hash.s: Cpp-files/hash.cpp.s
+
+.PHONY : Cpp-files/hash.s
+
+# target to generate assembly for a file
+Cpp-files/hash.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.s
+.PHONY : Cpp-files/hash.cpp.s
+
+Cpp-files/hashTable.o: Cpp-files/hashTable.cpp.o
+
+.PHONY : Cpp-files/hashTable.o
+
+# target to build an object file
+Cpp-files/hashTable.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.o
+.PHONY : Cpp-files/hashTable.cpp.o
+
+Cpp-files/hashTable.i: Cpp-files/hashTable.cpp.i
+
+.PHONY : Cpp-files/hashTable.i
+
+# target to preprocess a source file
+Cpp-files/hashTable.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.i
+.PHONY : Cpp-files/hashTable.cpp.i
+
+Cpp-files/hashTable.s: Cpp-files/hashTable.cpp.s
+
+.PHONY : Cpp-files/hashTable.s
+
+# target to generate assembly for a file
+Cpp-files/hashTable.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.s
+.PHONY : Cpp-files/hashTable.cpp.s
+
 Cpp-files/passenger.o: Cpp-files/passenger.cpp.o
 
 .PHONY : Cpp-files/passenger.o
@@ -258,32 +312,59 @@ Cpp-files/passenger.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/passenger.cpp.s
 .PHONY : Cpp-files/passenger.cpp.s
 
-hash.o: hash.cpp.o
+Cpp-files/searches.o: Cpp-files/searches.cpp.o
 
-.PHONY : hash.o
+.PHONY : Cpp-files/searches.o
 
 # target to build an object file
-hash.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/hash.cpp.o
-.PHONY : hash.cpp.o
+Cpp-files/searches.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.o
+.PHONY : Cpp-files/searches.cpp.o
 
-hash.i: hash.cpp.i
+Cpp-files/searches.i: Cpp-files/searches.cpp.i
 
-.PHONY : hash.i
+.PHONY : Cpp-files/searches.i
 
 # target to preprocess a source file
-hash.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/hash.cpp.i
-.PHONY : hash.cpp.i
+Cpp-files/searches.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.i
+.PHONY : Cpp-files/searches.cpp.i
 
-hash.s: hash.cpp.s
+Cpp-files/searches.s: Cpp-files/searches.cpp.s
 
-.PHONY : hash.s
+.PHONY : Cpp-files/searches.s
 
 # target to generate assembly for a file
-hash.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/hash.cpp.s
-.PHONY : hash.cpp.s
+Cpp-files/searches.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.s
+.PHONY : Cpp-files/searches.cpp.s
+
+Cpp-files/sorts.o: Cpp-files/sorts.cpp.o
+
+.PHONY : Cpp-files/sorts.o
+
+# target to build an object file
+Cpp-files/sorts.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.o
+.PHONY : Cpp-files/sorts.cpp.o
+
+Cpp-files/sorts.i: Cpp-files/sorts.cpp.i
+
+.PHONY : Cpp-files/sorts.i
+
+# target to preprocess a source file
+Cpp-files/sorts.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.i
+.PHONY : Cpp-files/sorts.cpp.i
+
+Cpp-files/sorts.s: Cpp-files/sorts.cpp.s
+
+.PHONY : Cpp-files/sorts.s
+
+# target to generate assembly for a file
+Cpp-files/sorts.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab_3.dir/build.make CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.s
+.PHONY : Cpp-files/sorts.cpp.s
 
 main.o: main.cpp.o
 
@@ -333,12 +414,21 @@ help:
 	@echo "... Cpp-files/generator.o"
 	@echo "... Cpp-files/generator.i"
 	@echo "... Cpp-files/generator.s"
+	@echo "... Cpp-files/hash.o"
+	@echo "... Cpp-files/hash.i"
+	@echo "... Cpp-files/hash.s"
+	@echo "... Cpp-files/hashTable.o"
+	@echo "... Cpp-files/hashTable.i"
+	@echo "... Cpp-files/hashTable.s"
 	@echo "... Cpp-files/passenger.o"
 	@echo "... Cpp-files/passenger.i"
 	@echo "... Cpp-files/passenger.s"
-	@echo "... hash.o"
-	@echo "... hash.i"
-	@echo "... hash.s"
+	@echo "... Cpp-files/searches.o"
+	@echo "... Cpp-files/searches.i"
+	@echo "... Cpp-files/searches.s"
+	@echo "... Cpp-files/sorts.o"
+	@echo "... Cpp-files/sorts.i"
+	@echo "... Cpp-files/sorts.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
