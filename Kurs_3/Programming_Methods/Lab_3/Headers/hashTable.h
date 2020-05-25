@@ -23,10 +23,10 @@ public:
     hashTable();
 
     //! Ф-ия составления хеш-таблицы(map) из заданного вектора и подсчета кол-ва коллизий
-    void make_hashTable(map <unsigned long long, vector<Passenger>> &hash_table, vector<Passenger> passengers, bool bad_hash_bool = false);
+    int make_hashTable(map <unsigned long long, vector<Passenger>> &hash_table, vector<Passenger> passengers, bool bad_hash_bool = false);
 
     //! Ф-ия составления хеш-таблицы(unordered_map) из заданного вектора и подсчета кол-ва коллизий
-    void make_hashTable(unordered_map <unsigned long long, vector<Passenger>> &hash_table, vector<Passenger> passengers, bool bad_hash_bool = false);
+    int make_hashTable(unordered_map <unsigned long long, vector<Passenger>> &hash_table, vector<Passenger> passengers, bool bad_hash_bool = false);
 
     //! Ф-ия вывода хеш-таблицы(map)
     void displayHash(map <unsigned long long, vector<Passenger>> hash_table);

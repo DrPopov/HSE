@@ -13,8 +13,8 @@
 hashTable::hashTable() {}
 
 
-void hashTable::make_hashTable(map<unsigned long long, vector<Passenger>> &hash_table, vector<Passenger> passengers, bool bad_hash_bool) {
-    int collision;
+int hashTable::make_hashTable(map<unsigned long long, vector<Passenger>> &hash_table, vector<Passenger> passengers, bool bad_hash_bool) {
+    int collision = 0;
 
     for(auto passenger : passengers){
         int count =0; //Кол-во записей с таким хешем
@@ -42,10 +42,11 @@ void hashTable::make_hashTable(map<unsigned long long, vector<Passenger>> &hash_
         }
 
     }
+    return collision;
 }
 
-void hashTable::make_hashTable(unordered_map<unsigned long long int, vector<Passenger>> &hash_table, vector<Passenger> passengers, bool bad_hash_bool) {
-    int collision;
+int hashTable::make_hashTable(unordered_map<unsigned long long int, vector<Passenger>> &hash_table, vector<Passenger> passengers, bool bad_hash_bool) {
+    int collision = 0;
 
     for(auto passenger : passengers){
         int count =0; //Кол-во записей с таким хешем
@@ -73,6 +74,7 @@ void hashTable::make_hashTable(unordered_map<unsigned long long int, vector<Pass
         }
 
     }
+    return collision;
 }
 
 void hashTable::displayHash(map<unsigned long long, vector<Passenger>> hash_table) {

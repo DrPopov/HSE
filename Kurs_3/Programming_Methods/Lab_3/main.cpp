@@ -8,6 +8,16 @@
  * ##  Вариант 11
  * </CENTER>
  *
+ *
+ *  Время поиска элементов в различных структурах данные показаны на графике
+ *
+ *
+ *  ![рафик 1](hash.png)
+ *
+ *
+ *  График зависимости количества коллизий от числа элементов массива:
+ *
+ *  ![График 2](Collis.png)
  * [Ссылка на github с исходным кодом](https://github.com/DrPopov/HSE/tree/master/Kurs_3/Programming_Methods)
 */
 
@@ -43,14 +53,14 @@ void experiment(){
     ifstream fin;
     ofstream fout;
 
-    bool our_hash;
+    bool simple_hash;
     cout << "\t\tIt's experiment variant! Here I intersect time and build charts! Let's go:\n";
     Generator generator = Generator();
     ReadWriter readWriter = ReadWriter();
 
     // Запись пассажиров в файл-------------------------
     int n = 9;
-    //auto passengers = generator.generate_passengers(n, our_hash);
+    //auto passengers = generator.generate_passengers(n, simple_hash);
     //readWriter.writeValues("../raw_data/passengers_" + to_string(n) + ".txt", passengers);
     //for(auto l : passengers){cout <<l;}
     //--------------------------------------------------
@@ -63,15 +73,15 @@ void experiment(){
     unordered_map<unsigned long long, vector<Passenger>> hash_table_1;
 
     //! Map
-    hashT.make_hashTable(hash_table, passengers, our_hash);
+    hashT.make_hashTable(hash_table, passengers, simple_hash);
     hashT.displayHash(hash_table);
-    hashT.find(hash_table,  Fio("ro", "m", "dj"), our_hash);
+    hashT.find(hash_table,  Fio("ro", "m", "dj"), simple_hash);
 
 
     //! Unordered_map
-    hashT.make_hashTable(hash_table_1, passengers, our_hash);
+    hashT.make_hashTable(hash_table_1, passengers, simple_hash);
     hashT.displayHash(hash_table_1);
-    hashT.find(hash_table_1,  Fio("ro", "m", "dj"), our_hash);
+    hashT.find(hash_table_1,  Fio("ro", "m", "dj"), simple_hash);
     */
     vector<int> list_n = {100, 500, 1000, 5000, 10000, 15000, 25000, 50000, 75000, 100000};
    /*
@@ -93,35 +103,38 @@ void experiment(){
 
     }
     */
-    /*
+
     //! Map
-    our_hash = true;
+    simple_hash = true;
     fout.open("../Results: Map search", ios::out | ios::app);
     fout << "\t\t\t\t\tIt was Map search!\n";
     fout.close();
 
+    vector<int> amount_coll;
     for(int n_k : list_n){
-        auto passengers = readWriter.readValues("../raw_data/passengers_" + to_string(n_k) + ".txt");
+        auto passengers = readWriter.readValues("../raw_passengers_with_good_hash/passengers_" + to_string(n_k) + ".txt");
 
         hashTable hashT = hashTable();
         map<unsigned long long, vector<Passenger>> hash_table;
 
-        hashT.make_hashTable(hash_table, passengers, our_hash);
+        int amount = hashT.make_hashTable(hash_table, passengers, simple_hash);
+        amount_coll.push_back(amount);
+        cout << "Amount of passengers is " << n_k << " Collisins are " << amount << endl;
 
         auto start = std::chrono::steady_clock::now();
-        hashT.find(hash_table,  Fio("ro", "m", "dj"), our_hash);
+        hashT.find(hash_table, Fio("ro", "m", "dj"), simple_hash);
         auto end = std::chrono::steady_clock::now();
         auto elapsed_ms = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start);
 
-        fout.open("../Results: Map search", ios::out | ios::app);
-        fout << "Amount of passengers: "  << setw(10) << left <<n_k << "The time of searching: " <<  elapsed_ms.count() << endl;
-        fout.close();
+        //fout.open("../Results: Map search", ios::out | ios::app);
+        //fout << "Amount of passengers: "  << setw(10) << left <<n_k << "The time of searching: " <<  elapsed_ms.count() << endl;
+        //fout.close();
     }
-    */
 
 
+    /*
     //! Unordered_map
-    our_hash = true;
+    simple_hash = true;
     fout.open("../Results: Unordered_map search with bad hash", ios::out | ios::app);
     fout << "\t\t\t\t\tIt was Unordered_map search!\n";
     fout.close();
@@ -132,10 +145,10 @@ void experiment(){
         hashTable hashT = hashTable();
         map<unsigned long long, vector<Passenger>> hash_table;
 
-        hashT.make_hashTable(hash_table, passengers, our_hash);
+        hashT.make_hashTable(hash_table, passengers, simple_hash);
 
         auto start = std::chrono::steady_clock::now();
-        hashT.find(hash_table,  Fio("ro", "m", "dj"), our_hash);
+        hashT.find(hash_table,  Fio("ro", "m", "dj"), simple_hash);
         auto end = std::chrono::steady_clock::now();
         auto elapsed_ms = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start);
 
@@ -163,10 +176,10 @@ void experiment(){
 
 
     }
-    */
+
 
    //! Map
-   our_hash = true;
+   simple_hash = true;
    fout.open("../Results: Map search with bad hash", ios::out | ios::app);
    fout << "\t\t\t\t\tIt was Map search!\n";
    fout.close();
@@ -177,10 +190,10 @@ void experiment(){
        hashTable hashT = hashTable();
        map<unsigned long long, vector<Passenger>> hash_table;
 
-       hashT.make_hashTable(hash_table, passengers, our_hash);
+       hashT.make_hashTable(hash_table, passengers, simple_hash);
 
        auto start = std::chrono::steady_clock::now();
-       hashT.find(hash_table,  Fio("ro", "m", "dj"), our_hash);
+       hashT.find(hash_table,  Fio("ro", "m", "dj"), simple_hash);
        auto end = std::chrono::steady_clock::now();
        auto elapsed_ms = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start);
 
@@ -189,6 +202,7 @@ void experiment(){
        fout.close();
    }
 
+*/
 
 }
 int main() {
@@ -217,11 +231,11 @@ int main() {
     //binarySearch(sorted_passengers,Fio("a", "a", "a") );
 
 
-    //unsigned int a = good_hash(Fio("abc", "a", "r"));
+    //unsigned int a = simple_hash(Fio("abc", "a", "r"));
     //cout << a << endl;
 
 
-    //int b = bad_hash("abc");
+    //int b = elf_hash("abc");
     //cout << b;
 
     //Passenger passenger1 = Passenger(Fio("a", "a", "a"),FlightTime(1, 1, 1), 10, 1);
@@ -236,3 +250,5 @@ int main() {
 
     return 0;
 }
+
+
