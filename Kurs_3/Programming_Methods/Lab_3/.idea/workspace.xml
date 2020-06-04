@@ -12,38 +12,113 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e052751-279d-4e1c-b367-fae36bda6e38" name="Default Changelist" comment="Add linear and binary search">
-      <change afterPath="$PROJECT_DIR$/documention/html/Collis.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documention/html/hash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documention/html/images/Collis.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documention/html/images/hash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documention/latex/Collis.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documention/latex/hash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demonstration's results: bad hash" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documention.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documention/html/search/all_b.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documention/html/search/all_b.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documention/html/search/all_c.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documention/html/search/all_c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documention/html/search/functions_a.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documention/html/search/functions_a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documention/html/search/functions_b.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documention/html/search/functions_b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OIB/.~lock.Курсовая работа Попов.docx#" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp-files/generator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp-files/generator.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cpp-files/hash.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp-files/hash.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cpp-files/hashTable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp-files/hashTable.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cpp-files/passenger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp-files/passenger.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Headers/hash.h" beforeDir="false" afterPath="$PROJECT_DIR$/Headers/hash.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Headers/hashTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Headers/hashTable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results: Map search" beforeDir="false" afterPath="$PROJECT_DIR$/Results: Map search" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Headers/passenger.h" beforeDir="false" afterPath="$PROJECT_DIR$/Headers/passenger.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results: Map search" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results: Map search with bad hash" beforeDir="false" afterPath="$PROJECT_DIR$/Results: Map search with bad hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results: Map search with good hash" beforeDir="false" afterPath="$PROJECT_DIR$/Results: Map search with good hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results: Unordered_map search" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/Cpp-files/ReadWriter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/Cpp-files/ReadWriter.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/Cpp-files/generator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/Cpp-files/generator.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/Cpp-files/hash.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/Cpp-files/hashTable.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/Cpp-files/passenger.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/Cpp-files/passenger.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/Cpp-files/searches.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/Cpp-files/sorts.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab_3.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lab_3" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Lab_3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dgconfig" beforeDir="false" afterPath="$PROJECT_DIR$/dgconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/ReadWriter_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/ReadWriter_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/annotated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/classFio-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/classFio-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/classFio.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/classFio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/classFlightTime-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/classFlightTime-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/classFlightTime.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/classFlightTime.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/classGenerator-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/classGenerator-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/classGenerator.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/classGenerator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/classPassenger-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/classPassenger-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/classPassenger.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/classPassenger.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/classReadWriter-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/classReadWriter-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/classReadWriter.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/classReadWriter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documention/html/classhashTable-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/classhashTable-members.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documention/html/classhashTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/classhashTable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/dir_173ab0ca305ac6c80985ab6647798a47.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/dir_173ab0ca305ac6c80985ab6647798a47.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/dir_247c9eba0c420962286e8bd2a154537b.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/dir_247c9eba0c420962286e8bd2a154537b.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/dir_2942f868a03c41b22a536fdc77b965b5.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/dir_2942f868a03c41b22a536fdc77b965b5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/dir_5493c5c7dbd812739122a363bbcd150d.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/dir_5493c5c7dbd812739122a363bbcd150d.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/dir_692516b589a32b3bfce781ca9f6d1534.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/dir_692516b589a32b3bfce781ca9f6d1534.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/dir_7e5007427a5c7b33fee08e4705ef4ca8.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/dir_7e5007427a5c7b33fee08e4705ef4ca8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/dir_95e29a8b8ee7c54052c171a88bb95675.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/dir_95e29a8b8ee7c54052c171a88bb95675.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/dir_c5c94acd8574d00207a546337a6b56da.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/dir_c5c94acd8574d00207a546337a6b56da.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/dir_d485c4ae416b174ff1733bba04defc35.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/dir_d485c4ae416b174ff1733bba04defc35.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/dir_d7b97a1cb2adb8c3dd8f320d358c0a3f.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/dir_d7b97a1cb2adb8c3dd8f320d358c0a3f.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/dir_de611d2c7883dc98b5ca95f47239bd26.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/dir_de611d2c7883dc98b5ca95f47239bd26.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/dir_e1ecdbac78f5041bd527fb40a7fd21eb.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/dir_e1ecdbac78f5041bd527fb40a7fd21eb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/dir_f89abcb304c928c7d889aa5625570de5.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/dir_f89abcb304c928c7d889aa5625570de5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/fio_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/fio_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/flightTime_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/flightTime_8h_source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documention/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/functions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documention/html/functions_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/functions_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/generator_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/generator_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/globals.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/globals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/globals_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/globals_func.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documention/html/hashTable_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/hashTable_8h_source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documention/html/hash_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/hash_8h_source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documention/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documention/html/main_8cpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/main_8cpp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/passenger_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/passenger_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/all_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/all_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/all_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/all_3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documention/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/all_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/all_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/all_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/all_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/all_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/all_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/all_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/all_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/classes_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/classes_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/classes_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/classes_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/classes_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/classes_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/classes_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/classes_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/classes_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/classes_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/files_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/files_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/functions_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/functions_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/functions_3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documention/html/search/functions_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/functions_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/functions_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/functions_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/functions_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/functions_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/functions_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/functions_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/functions_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/functions_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/functions_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/functions_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/searches_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/searches_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/html/sorts_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/documention/html/sorts_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/latex/classPassenger.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documention/latex/classPassenger.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documention/latex/classhashTable.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documention/latex/classhashTable.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documention/latex/index.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documention/latex/index.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documention/latex/main_8cpp.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documention/latex/main_8cpp.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documention/latex/refman.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documention/latex/refman.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +190,9 @@
       <workItem from="1589576658450" duration="5123000" />
       <workItem from="1589883059794" duration="20997000" />
       <workItem from="1590182879544" duration="9000" />
-      <workItem from="1590301172444" duration="54999000" />
+      <workItem from="1590301172444" duration="70885000" />
+      <workItem from="1590517557152" duration="4000" />
+      <workItem from="1590617599894" duration="35000" />
     </task>
     <task id="LOCAL-00001" summary="Add linear and binary search">
       <created>1589993921069</created>
@@ -153,50 +230,51 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="529" height="506" key="DebuggerActiveHint/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589993785760" />
-    <state x="895" y="129" width="725" height="484" key="FileChooserDialogImpl" timestamp="1589883739946">
+    <state x="895" y="129" width="725" height="484" key="FileChooserDialogImpl" timestamp="1590617619667">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="895" y="129" width="725" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1589883739946" />
-    <state width="1807" height="237" key="GridCell.Tab.0.bottom" timestamp="1590370355097">
+    <state x="895" y="129" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1590617619667" />
+    <state width="1807" height="338" key="GridCell.Tab.0.bottom" timestamp="1590419155149">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1874" height="149" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590367308989" />
-    <state width="1807" height="237" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590370355097" />
-    <state width="1807" height="237" key="GridCell.Tab.0.center" timestamp="1590370355097">
+    <state width="1807" height="338" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590419155149" />
+    <state width="1807" height="338" key="GridCell.Tab.0.center" timestamp="1590419155148">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1874" height="149" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590367308989" />
-    <state width="1807" height="237" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590370355097" />
-    <state width="1807" height="237" key="GridCell.Tab.0.left" timestamp="1590370355097">
+    <state width="1807" height="338" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590419155148" />
+    <state width="1807" height="338" key="GridCell.Tab.0.left" timestamp="1590419155148">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1874" height="149" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590367308988" />
-    <state width="1807" height="237" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590370355097" />
-    <state width="1807" height="237" key="GridCell.Tab.0.right" timestamp="1590370355097">
+    <state width="1807" height="338" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590419155148" />
+    <state width="1807" height="338" key="GridCell.Tab.0.right" timestamp="1590419155149">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1874" height="149" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590367308989" />
-    <state width="1807" height="237" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590370355097" />
-    <state width="1807" height="178" key="GridCell.Tab.1.bottom" timestamp="1590369362881">
+    <state width="1807" height="338" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590419155149" />
+    <state width="1807" height="338" key="GridCell.Tab.1.bottom" timestamp="1590419155149">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1874" height="251" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590334174472" />
-    <state width="1807" height="178" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590369362881" />
-    <state width="1807" height="178" key="GridCell.Tab.1.center" timestamp="1590369362881">
+    <state width="1807" height="338" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590419155149" />
+    <state width="1807" height="338" key="GridCell.Tab.1.center" timestamp="1590419155149">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1874" height="251" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590334174472" />
-    <state width="1807" height="178" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590369362881" />
-    <state width="1807" height="178" key="GridCell.Tab.1.left" timestamp="1590369362881">
+    <state width="1807" height="338" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590419155149" />
+    <state width="1807" height="338" key="GridCell.Tab.1.left" timestamp="1590419155149">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1874" height="251" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590334174472" />
-    <state width="1807" height="178" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590369362881" />
-    <state width="1807" height="178" key="GridCell.Tab.1.right" timestamp="1590369362881">
+    <state width="1807" height="338" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590419155149" />
+    <state width="1807" height="338" key="GridCell.Tab.1.right" timestamp="1590419155149">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1874" height="251" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1590334174472" />
-    <state width="1807" height="178" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590369362881" />
+    <state width="1807" height="338" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1590419155149" />
     <state x="2712" y="324" width="325" height="429" key="refactoring.ChangeSignatureDialog" timestamp="1590303552212">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -213,6 +291,11 @@
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Cpp-files/passenger.cpp</url>
           <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>244</line>
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

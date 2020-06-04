@@ -4,40 +4,35 @@
 #include "../Headers/hash.h"
 
 
-unsigned long long elf_hash(const Fio fio){
-    unsigned long long hash = 0, x;
-    string str = fio.get_first_name() + fio.get_second_name() + fio.get_father_name();
-    //cout << "Elf" << endl;
-    for (char c : str)
-    {
-        hash = (hash << 4) + static_cast<std::size_t>(c);
-        if ((x = (hash & 0xF0000000)))
-            hash ^= x >> 24;
-        hash &= ~x;
-    }
-    return hash;
-}
+std::size_t bad_hash(Fio fio){
 
-
-unsigned long long simple_hash(Fio fio){
-    unsigned long long hash;
     string temp;
     string str = fio.get_first_name() + fio.get_second_name() + fio.get_father_name();
 
-    for(auto i : str){
-       temp += to_string((static_cast<unsigned int>(i)) % 99) ;
-    }
-
-    hash = stoull(temp);
+    std::size_t hash = 0;
+    for (char letter : str)
+        hash += static_cast<uint32_t>(letter);
     return hash;
 
 }
 
-unsigned long long get_hash(Fio key, bool Is_simple_hash){
-    unsigned long long hash_value;
+std::size_t good_hash(const Fio fio){
+    string str = fio.get_first_name() + fio.get_second_name() + fio.get_father_name();
+
+    std::size_t hash = 0;
+    for (std::size_t i = 0; i < str.length(); ++i)
+        hash += (i * static_cast<std::size_t>(str[i]) - hash * 11) & 0xFFFFFFFF;
+    return hash;
+}
+
+
+
+
+std::size_t get_hash(Fio key, bool Is_simple_hash){
+    std::size_t hash_value;
     if(Is_simple_hash){
-        hash_value = simple_hash(key);
-    } else{ hash_value = elf_hash(key);}
+        hash_value = bad_hash(key);
+    } else{hash_value = good_hash(key);}
     return hash_value;
 }
 

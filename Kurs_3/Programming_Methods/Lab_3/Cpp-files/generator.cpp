@@ -32,15 +32,15 @@ Fio  Generator::random_fio(){
     string temp2;
     string temp3;
 
-    for(int j = 0; j <= rand()  % 3; j++ ){
+    for(int j = 0; j <= rand()  % 9; j++ ){
         temp1.push_back(char('a' +   rand() % ('z' - 'a')));
     }
 
-    for(int j = 0; j <= rand() % 3; j++ ){
+    for(int j = 0; j <= rand() % 9; j++ ){
         temp2.push_back(char('a'   + rand() % ('z' - 'a')));
     }
 
-    for(int j = 0; j <= rand() % 3; j++ ){
+    for(int j = 0; j <= rand() % 9; j++ ){
         temp3.push_back(char('a'   + rand() % ('z' - 'a')));
     }
 
@@ -70,13 +70,14 @@ Passenger  Generator::generate_passenger(bool bad_hash_bool){
     passenger.set_seat_number(generator.random_seat_number());
 
     //Passenger passenger = Passenger(Fio(generator.random_fio()), FlightTime(generator.random_flight_data()), generator.random_flight_number(), generator.random_seat_number(), bad_hash_bool);
-
+    passenger.set_hash(get_hash(passenger.get_fio(), bad_hash_bool));
+    /*
     if(bad_hash_bool){
         passenger.set_bad_hash(passenger.get_fio());
     } else{
         passenger.set_good_hash(passenger.get_fio());
     }
-
+    */
     return passenger;
 
 }

@@ -55,8 +55,8 @@ public:
     //Установка и получение хорошего хеша ФИО
     void set_good_hash(Fio fio); //! Установка хеша пароля
     void set_bad_hash(Fio fio); //! Установка хеша пароля
-    void set_hash(unsigned long long hash); //! Установка хеша
-    unsigned long long get_hash() const; //! Получение хеша пароля
+    void set_hash(std::size_t hash); //! Установка хеша
+    std::size_t get_hash() const; //! Получение хеша пароля
 
 
     //-------Operators overloading------------------------------------------------------------------------------------------

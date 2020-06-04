@@ -61,19 +61,19 @@ int  Passenger::get_seat_number() const {
 
 //Установка хорошего хеша ФИО
 void Passenger::set_good_hash(Fio fio) {
-    Passenger::hash = simple_hash(fio);
+    Passenger::hash = bad_hash(fio);
 }
 
 //Установка плохого хеша ФИО
 void Passenger::set_bad_hash(Fio fio) {
-    Passenger::hash = elf_hash(fio);
+    Passenger::hash = good_hash(fio);
 }
 
-void Passenger::set_hash(unsigned long long hash) {
+void Passenger::set_hash(std::size_t hash) {
     Passenger::hash = hash;
 }
 //Получение хеша ФИО
-unsigned long long Passenger::get_hash() const{
+std::size_t Passenger::get_hash() const{
     return Passenger::hash;
 }
 

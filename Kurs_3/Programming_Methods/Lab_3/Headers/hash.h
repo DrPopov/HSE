@@ -18,7 +18,7 @@ using namespace std;
  * @param str: Строка, которую надо захешировать
  * @return: int хеш от строки str
  */
-unsigned long long elf_hash(Fio fio);
+std::size_t good_hash(const Fio fio);
 
 
 
@@ -28,7 +28,7 @@ unsigned long long elf_hash(Fio fio);
  * @param str: Строка, которую надо захешировать
  * @return: int хеш от строки str
  */
-unsigned long long simple_hash(Fio fio);
+std::size_t bad_hash(Fio fio);
 
 /**
  * @brief Ф-ия, определяющая какой хеш вызывать: хороший или плохой
@@ -37,4 +37,4 @@ unsigned long long simple_hash(Fio fio);
  * @param Is_simple_hash По умолчанию - false, то есть по умолчанию берется хороший хеш
  * @return Хеш ключа
  */
-unsigned long long get_hash(Fio key, bool Is_simple_hash);
+std::size_t get_hash(Fio key, bool Is_simple_hash);

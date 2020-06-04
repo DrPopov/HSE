@@ -23,22 +23,22 @@ public:
     hashTable();
 
     //! Ф-ия составления хеш-таблицы(map) из заданного вектора и подсчета кол-ва коллизий
-    int make_hashTable(map <unsigned long long, vector<Passenger>> &hash_table, vector<Passenger> passengers, bool bad_hash_bool = false);
+    int make_hashTable(map <std::size_t, vector<Passenger>> &hash_table, vector<Passenger> passengers, bool bad_hash_bool = false);
 
     //! Ф-ия составления хеш-таблицы(unordered_map) из заданного вектора и подсчета кол-ва коллизий
-    int make_hashTable(unordered_map <unsigned long long, vector<Passenger>> &hash_table, vector<Passenger> passengers, bool bad_hash_bool = false);
+    int make_hashTable(unordered_map <std::size_t, vector<Passenger>> &hash_table, vector<Passenger> passengers, bool bad_hash_bool = false);
 
     //! Ф-ия вывода хеш-таблицы(map)
-    void displayHash(map <unsigned long long, vector<Passenger>> hash_table);
+    void displayHash(map <std::size_t, vector<Passenger>> &hash_table);
 
     //! Ф-ия вывода хеш-таблицы(unordered_map)
-    void displayHash(unordered_map <unsigned long long, vector<Passenger>> hash_table);
+    void displayHash(unordered_map <std::size_t, vector<Passenger>> &hash_table);
 
     //! Операция поиска по ключу в unordered_map
-    vector<Passenger> find(unordered_map<unsigned long long, vector<Passenger>> &hash_table, const Fio &key, bool bad_hash_bool = false);
+    vector<Passenger> find(unordered_map<std::size_t, vector<Passenger>> &hash_table, const Fio &key, bool bad_hash_bool = false);
 
     //! Операция поиска по ключу в map
-    vector<Passenger> find(map<unsigned long long, vector<Passenger>> &hash_table, const Fio &key, bool bad_hash_bool = false);
+    vector<Passenger> find(map<std::size_t, vector<Passenger>> &hash_table, const Fio &key, bool bad_hash_bool = false);
     //---------------------------------------------------------------------
 
 

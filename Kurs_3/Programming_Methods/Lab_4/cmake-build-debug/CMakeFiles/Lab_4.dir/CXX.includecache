@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_4/Headers/PRNG.h
+random
+-
+
+/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_4/Headers/make_sample.h
+iostream
+-
+vector
+-
+../Headers/PRNG.h
+/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_4/Headers/PRNG.h
+
+/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_4/Headers/matstat.h
+vector
+-
+cmath
+-
+
+/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_4/main.cpp
+iostream
+-
+fstream
+-
+random
+-
+Headers/matstat.h
+/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_4/Headers/matstat.h
+Headers/make_sample.h
+/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_4/Headers/make_sample.h
+Headers/PRNG.h
+/home/ypopov/HSE/Kurs_3/Programming_Methods/Lab_4/Headers/PRNG.h
+chrono
+-
+

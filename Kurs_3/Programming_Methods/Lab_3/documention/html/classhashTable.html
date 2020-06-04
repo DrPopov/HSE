@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Hush functions: Класс hashTable</title>
+<title>Функции хэширования: Класс hashTable</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Hush functions
+   <div id="projectname">Функции хэширования
    &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Lab_3</div>
@@ -78,30 +78,30 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a7903c32888f6c4558e697f4d563fc8b3"><td class="memItemLeft" align="right" valign="top"><a id="a7903c32888f6c4558e697f4d563fc8b3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhashTable.html#a7903c32888f6c4558e697f4d563fc8b3">make_hashTable</a> (map&lt; unsigned long long, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&gt; &amp;hash_table, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt; passengers, bool bad_hash_bool=false)</td></tr>
-<tr class="memdesc:a7903c32888f6c4558e697f4d563fc8b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ф-ия составления хеш-таблицы(map) из заданного вектора и подсчета кол-ва коллизий <br /></td></tr>
-<tr class="separator:a7903c32888f6c4558e697f4d563fc8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a911ac6aced5ad6b616d21d1d03b2647c"><td class="memItemLeft" align="right" valign="top"><a id="a911ac6aced5ad6b616d21d1d03b2647c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhashTable.html#a911ac6aced5ad6b616d21d1d03b2647c">make_hashTable</a> (unordered_map&lt; unsigned long long, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&gt; &amp;hash_table, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt; passengers, bool bad_hash_bool=false)</td></tr>
-<tr class="memdesc:a911ac6aced5ad6b616d21d1d03b2647c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ф-ия составления хеш-таблицы(unordered_map) из заданного вектора и подсчета кол-ва коллизий <br /></td></tr>
-<tr class="separator:a911ac6aced5ad6b616d21d1d03b2647c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7cca245cbccb2845796a495e4b6dd1f"><td class="memItemLeft" align="right" valign="top"><a id="ac7cca245cbccb2845796a495e4b6dd1f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhashTable.html#ac7cca245cbccb2845796a495e4b6dd1f">displayHash</a> (map&lt; unsigned long long, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&gt; hash_table)</td></tr>
-<tr class="memdesc:ac7cca245cbccb2845796a495e4b6dd1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ф-ия вывода хеш-таблицы(map) <br /></td></tr>
-<tr class="separator:ac7cca245cbccb2845796a495e4b6dd1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27f8f5de5b0b399f1ac8291fcb996ecf"><td class="memItemLeft" align="right" valign="top"><a id="a27f8f5de5b0b399f1ac8291fcb996ecf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhashTable.html#a27f8f5de5b0b399f1ac8291fcb996ecf">displayHash</a> (unordered_map&lt; unsigned long long, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&gt; hash_table)</td></tr>
-<tr class="memdesc:a27f8f5de5b0b399f1ac8291fcb996ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ф-ия вывода хеш-таблицы(unordered_map) <br /></td></tr>
-<tr class="separator:a27f8f5de5b0b399f1ac8291fcb996ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57b8995ce3850ff67f497f31a6c95a7e"><td class="memItemLeft" align="right" valign="top"><a id="a57b8995ce3850ff67f497f31a6c95a7e"></a>
-vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhashTable.html#a57b8995ce3850ff67f497f31a6c95a7e">find</a> (unordered_map&lt; unsigned long long, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&gt; &amp;hash_table, const <a class="el" href="classFio.html">Fio</a> &amp;key, bool bad_hash_bool=false)</td></tr>
-<tr class="memdesc:a57b8995ce3850ff67f497f31a6c95a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Операция поиска по ключу в unordered_map. <br /></td></tr>
-<tr class="separator:a57b8995ce3850ff67f497f31a6c95a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad70db3be6308c6293c44d2069973f65e"><td class="memItemLeft" align="right" valign="top"><a id="ad70db3be6308c6293c44d2069973f65e"></a>
-vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhashTable.html#ad70db3be6308c6293c44d2069973f65e">find</a> (map&lt; unsigned long long, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&gt; &amp;hash_table, const <a class="el" href="classFio.html">Fio</a> &amp;key, bool bad_hash_bool=false)</td></tr>
-<tr class="memdesc:ad70db3be6308c6293c44d2069973f65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Операция поиска по ключу в map. <br /></td></tr>
-<tr class="separator:ad70db3be6308c6293c44d2069973f65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab19b03faca1ba9bdd735d3103778d1"><td class="memItemLeft" align="right" valign="top"><a id="acab19b03faca1ba9bdd735d3103778d1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhashTable.html#acab19b03faca1ba9bdd735d3103778d1">make_hashTable</a> (map&lt; std::size_t, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&gt; &amp;hash_table, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt; passengers, bool bad_hash_bool=false)</td></tr>
+<tr class="memdesc:acab19b03faca1ba9bdd735d3103778d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ф-ия составления хеш-таблицы(map) из заданного вектора и подсчета кол-ва коллизий <br /></td></tr>
+<tr class="separator:acab19b03faca1ba9bdd735d3103778d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d59914c1607216d6689c0edef95bba"><td class="memItemLeft" align="right" valign="top"><a id="ac3d59914c1607216d6689c0edef95bba"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhashTable.html#ac3d59914c1607216d6689c0edef95bba">make_hashTable</a> (unordered_map&lt; std::size_t, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&gt; &amp;hash_table, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt; passengers, bool bad_hash_bool=false)</td></tr>
+<tr class="memdesc:ac3d59914c1607216d6689c0edef95bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ф-ия составления хеш-таблицы(unordered_map) из заданного вектора и подсчета кол-ва коллизий <br /></td></tr>
+<tr class="separator:ac3d59914c1607216d6689c0edef95bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacd0dd98bb56754b572c5655484b9697"><td class="memItemLeft" align="right" valign="top"><a id="aacd0dd98bb56754b572c5655484b9697"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhashTable.html#aacd0dd98bb56754b572c5655484b9697">displayHash</a> (map&lt; std::size_t, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&gt; &amp;hash_table)</td></tr>
+<tr class="memdesc:aacd0dd98bb56754b572c5655484b9697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ф-ия вывода хеш-таблицы(map) <br /></td></tr>
+<tr class="separator:aacd0dd98bb56754b572c5655484b9697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c689ce826c52ed5b3b7ca24e6849fc6"><td class="memItemLeft" align="right" valign="top"><a id="a2c689ce826c52ed5b3b7ca24e6849fc6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhashTable.html#a2c689ce826c52ed5b3b7ca24e6849fc6">displayHash</a> (unordered_map&lt; std::size_t, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&gt; &amp;hash_table)</td></tr>
+<tr class="memdesc:a2c689ce826c52ed5b3b7ca24e6849fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ф-ия вывода хеш-таблицы(unordered_map) <br /></td></tr>
+<tr class="separator:a2c689ce826c52ed5b3b7ca24e6849fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62de26099316c2e00ec2d31bc9c39b21"><td class="memItemLeft" align="right" valign="top"><a id="a62de26099316c2e00ec2d31bc9c39b21"></a>
+vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhashTable.html#a62de26099316c2e00ec2d31bc9c39b21">find</a> (unordered_map&lt; std::size_t, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&gt; &amp;hash_table, const <a class="el" href="classFio.html">Fio</a> &amp;key, bool bad_hash_bool=false)</td></tr>
+<tr class="memdesc:a62de26099316c2e00ec2d31bc9c39b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Операция поиска по ключу в unordered_map. <br /></td></tr>
+<tr class="separator:a62de26099316c2e00ec2d31bc9c39b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb7e14c27006cfe31550123a0bf815d"><td class="memItemLeft" align="right" valign="top"><a id="adcb7e14c27006cfe31550123a0bf815d"></a>
+vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhashTable.html#adcb7e14c27006cfe31550123a0bf815d">find</a> (map&lt; std::size_t, vector&lt; <a class="el" href="classPassenger.html">Passenger</a> &gt;&gt; &amp;hash_table, const <a class="el" href="classFio.html">Fio</a> &amp;key, bool bad_hash_bool=false)</td></tr>
+<tr class="memdesc:adcb7e14c27006cfe31550123a0bf815d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Операция поиска по ключу в map. <br /></td></tr>
+<tr class="separator:adcb7e14c27006cfe31550123a0bf815d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Хеш-таблица, хранящая пары ключ-значение, где ключ - это ФИО пассажира, а значение - хеш от этого ФИО </p>
