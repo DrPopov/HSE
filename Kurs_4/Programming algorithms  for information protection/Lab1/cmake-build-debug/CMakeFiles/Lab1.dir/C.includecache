@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/curve.h
+gmp.h
+-
+parameters.h
+/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/parameters.h
+
+/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/main.c
+stdio.h
+-
+string.h
+-
+gmp.h
+-
+curve.h
+/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/curve.h
+parameters.h
+/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/parameters.h
+
+/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/parameters.h
+
