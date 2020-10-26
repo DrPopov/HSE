@@ -45,20 +45,22 @@ struct JacobiCurve{
 // инициализация порождающей точки
 void basePointInit (struct Point *point, const struct JacobiCurve *curve);
 
-
+// перевод в аффинные координаты из проективных
+void affineCoordinatesConversion (struct Point *res, const struct Point *point, const struct JacobiCurve *curve);
 
 
 // вывод координат точки в аффинных координатах на экран
 void printAffinePoint (const struct Point *point, const struct JacobiCurve *curve);
 
-// перевод в аффинные координаты из проективных
-void affineCoordinatesConversion (struct Point *res, const struct Point *point, const struct JacobiCurve *curve);
-
 // инициализация кривой в форме квадрики Якоби
-void jacobiCurveInit (struct jacobiCurve *curve);
+void JacobiCurveInit (struct JacobiCurve *curve);
+
+
+
+
 
 // сложение двух точек
-void pointsAddition (struct point *res, const struct point *P1, const struct point *P2, const struct jacobiCurve *curve);
+void pointsAddition (struct Point *res, const struct Point *P1, const struct Point *P2, const struct JacobiCurve *curve);
 
 // сравнение двух  точек на равенство
 int pointsEquality (const struct point *P1, const struct point *P2, const struct jacobiCurve *curve);
@@ -73,10 +75,10 @@ void montgomeryLadder (struct point *res, const struct point *point, const struc
 int pointOnCurve (const struct jacobiCurve *curve, const struct point *point);
 
 // очистка памяти
-void pointFree (struct point *point);
+void pointFree (struct Point *point);
 
 // очистка памяти
-void curveFree (struct jacobiCurve *curve);
+void curveFree (struct JacobiCurve *curve);
 
 
 

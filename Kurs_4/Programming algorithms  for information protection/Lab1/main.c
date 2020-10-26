@@ -66,6 +66,15 @@ void tests(){
 
     printf("Test printAffinePoint:");
 
+    printf("Test pointFree");
+    pointFree(&point1);
+    pointFree(&point2);
+    pointFree(&point3);
+
+    printf("Test curveFree");
+    curveFree(&curve);
+
+
 
 }
 

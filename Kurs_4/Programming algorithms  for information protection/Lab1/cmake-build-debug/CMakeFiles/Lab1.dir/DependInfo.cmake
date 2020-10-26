@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/curve.c" "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/curve.c.o"
-  "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/main.c" "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/main.c.o"
+  "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/curve.c" "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/curve.c.o"
+  "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/main.c" "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

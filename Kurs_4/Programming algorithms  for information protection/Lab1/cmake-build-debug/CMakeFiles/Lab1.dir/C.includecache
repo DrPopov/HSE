@@ -6,13 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/curve.h
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/curve.c
+curve.h
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/curve.h
+gmp.h
+-
+
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/curve.h
 gmp.h
 -
 parameters.h
-/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/parameters.h
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/parameters.h
 
-/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/main.c
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/main.c
 stdio.h
 -
 string.h
@@ -20,9 +26,9 @@ string.h
 gmp.h
 -
 curve.h
-/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/curve.h
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/curve.h
 parameters.h
-/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/parameters.h
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/parameters.h
 
-/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/parameters.h
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/parameters.h
 

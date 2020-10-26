@@ -63,10 +63,10 @@ RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1"
+CMAKE_SOURCE_DIR = "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/cmake-build-debug"
+CMAKE_BINARY_DIR = "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Lab1.dir/depend.make
@@ -79,29 +79,29 @@ include CMakeFiles/Lab1.dir/flags.make
 
 CMakeFiles/Lab1.dir/main.c.o: CMakeFiles/Lab1.dir/flags.make
 CMakeFiles/Lab1.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Lab1.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lab1.dir/main.c.o   -c "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/main.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Lab1.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lab1.dir/main.c.o   -c "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/main.c"
 
 CMakeFiles/Lab1.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Lab1.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/main.c" > CMakeFiles/Lab1.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/main.c" > CMakeFiles/Lab1.dir/main.c.i
 
 CMakeFiles/Lab1.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Lab1.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/main.c" -o CMakeFiles/Lab1.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/main.c" -o CMakeFiles/Lab1.dir/main.c.s
 
 CMakeFiles/Lab1.dir/curve.c.o: CMakeFiles/Lab1.dir/flags.make
 CMakeFiles/Lab1.dir/curve.c.o: ../curve.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Lab1.dir/curve.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lab1.dir/curve.c.o   -c "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/curve.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Lab1.dir/curve.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lab1.dir/curve.c.o   -c "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/curve.c"
 
 CMakeFiles/Lab1.dir/curve.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Lab1.dir/curve.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/curve.c" > CMakeFiles/Lab1.dir/curve.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/curve.c" > CMakeFiles/Lab1.dir/curve.c.i
 
 CMakeFiles/Lab1.dir/curve.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Lab1.dir/curve.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/curve.c" -o CMakeFiles/Lab1.dir/curve.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/curve.c" -o CMakeFiles/Lab1.dir/curve.c.s
 
 # Object files for target Lab1
 Lab1_OBJECTS = \
@@ -115,7 +115,7 @@ Lab1: CMakeFiles/Lab1.dir/main.c.o
 Lab1: CMakeFiles/Lab1.dir/curve.c.o
 Lab1: CMakeFiles/Lab1.dir/build.make
 Lab1: CMakeFiles/Lab1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Lab1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Lab1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lab1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +128,6 @@ CMakeFiles/Lab1.dir/clean:
 .PHONY : CMakeFiles/Lab1.dir/clean
 
 CMakeFiles/Lab1.dir/depend:
-	cd "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1" "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1" "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/cmake-build-debug" "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/cmake-build-debug" "/home/drpopov/Desktop/HSE/Programming algorithms  for information protection/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1" "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1" "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/cmake-build-debug" "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/cmake-build-debug" "/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Lab1.dir/depend
 
