@@ -15,7 +15,7 @@ void printProjectivePoint (const struct Point *point)
  *  Инициализация нейтрального элемента в проективных координатах 0 = (0, 1, 1)
  */
 void neutralPointInit (struct Point *point){
-    mpz_inits(point->X, point->Y, point->Z);
+    mpz_init(point->X); mpz_init(point->Y); mpz_init( point->Z);
     mpz_set_str(point->X, "0", 10);
     mpz_set_str(point->Y, "1", 10);
     mpz_set_str(point->Z, "1", 10);
@@ -25,7 +25,7 @@ void neutralPointInit (struct Point *point){
  * Инициализация точки с произвольными координатами
  */
 void customPointInit (struct Point *point, char *X, char *Y, char *Z) {
-    mpz_inits(point->X, point->Y, point->Z);
+    mpz_init(point->X);  mpz_init(point->Y); mpz_init(point->Z);
     mpz_set_str(point->X, X, 10);
     mpz_set_str(point->Y, Y, 10);
     mpz_set_str(point->Z, Z, 10);
@@ -95,7 +95,7 @@ void printAffinePoint (const struct Point *point, const struct JacobiCurve *curv
     neutralPointInit (&res);
 
     affineCoordinatesConversion (&res, point, curve);
-    gmp_printf("x = %Zd\ny = %Zd\n\n",  res.X, res.Y);
+    gmp_printf("\nx = %Zd\ny = %Zd\n\n",  res.X, res.Y);
 }
 
 /*
@@ -353,7 +353,7 @@ int pointOnCurve (const struct JacobiCurve *curve, const struct Point *point){
     int res = -2;
 
     mpz_t left, right, buf1, buf2, exp;
-    mpz_inits(left, right, buf1, buf2, exp);
+    mpz_init(left);mpz_init(right); mpz_init(buf1); mpz_init(buf2); mpz_init(exp);
 
 
     mpz_set_str (buf2, "4", 10);                                // buf2 = 4
@@ -380,9 +380,9 @@ int pointOnCurve (const struct JacobiCurve *curve, const struct Point *point){
     mpz_mod(buf1, buf1, curve->p);
 
 
-    res = mpz_scan1(buf1, 0); // ??????????????///
+    res =  mpz_cmp_d(buf1, 0);
 
-    mpz_clears(left, right, buf1, buf2);
+    mpz_clear(left); mpz_clear(right); mpz_clear(buf1); mpz_clear(buf2);
 
     return res;
 }

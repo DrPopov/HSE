@@ -27,7 +27,7 @@
 
 void printPointOnCurve (int belongs, char *point)
 {
-    printf (belongs == 1 ? "\e[36mPoint %s is on curve\e[0m\n\n" : "\e[31mPoint %s is not on curve\e[0m\n\n", point);
+    printf (belongs == 0 ? "Point %s is on curve\n\n" : "Point %s is not on curve\n\n", point);
 }
 
 void printPointsEquality (int equal, char *P1, char *P2)
@@ -40,23 +40,41 @@ void tests(){
     printf("Start testing!");
 
     struct JacobiCurve curve;
-    mpz_inits(curve.p, curve.X_base, curve.Y_base, curve.Z_base, curve.a, curve.d);
-    mpz_inits(curve.e, curve.q, curve.theta, curve.x, curve.y);
+    mpz_init(curve.p); mpz_init(curve.X_base); mpz_init(curve.Y_base); mpz_init(curve.Z_base); mpz_init(curve.a); mpz_init(curve.d); mpz_init(curve.e); mpz_init(curve.q); mpz_init(curve.theta); mpz_init(curve.x); mpz_init(curve.y);
+
 
     printf("\nTest JacobiCurveInit:");
     JacobiCurveInit(&curve);
 
 
     struct Point E, P, P1, P2, P3;
-    //mpz_inits( E.X,  E.Y,  E.Z);
+    mpz_init( E.X); mpz_init( E.Y); mpz_init( E.Z);
+    mpz_init( P.X); mpz_init( P.Y); mpz_init( P.Z);
+    mpz_init( P1.X); mpz_init( P1.Y); mpz_init( P1.Z);
+    mpz_init( P2.X); mpz_init( P2.Y); mpz_init( P2.Z);
+    mpz_init( P3.X); mpz_init( P3.Y); mpz_init( P3.Z);
 
-    /**
-    mpz_inits( E.X,  E.Y,  E.Z,
-               P.X,  P.Y,  P.Z,
-               P1.X, P1.Y, P1.Z,
-               P2.X, P2.Y, P2.Z,
-               P3.X, P3.Y, P3.Z);
 
+    mpz_t power, k1, k2, max_rand;
+    mpz_init(max_rand);
+    mpz_set_str(max_rand, max_rand_str, 10);
+
+
+    customPointInit(&P1, "1", "1", "1");         // P1 = (1 : 1 : 1) в проетивных
+    customPointInit(&P2, "1", "1", "1");         // P2 = (1 : 1 : 1) в проективных
+
+    gmp_printf("\nParameter e = %Zd\n\n", curve.e);
+    gmp_printf("\nParameter d = %Zd\n\n", curve.d);
+
+    // TEST 1: E = (0 : 1 : 1) is on curve
+    printf("--------------- Test 1: ---------------");
+    neutralPointInit(&E);
+    printf("\nE - neutral element (0 : 1 : 1):");
+    printProjectivePoint(&E);
+    printf("E in affine coordinates:");
+    printAffinePoint(&E, &curve);
+    //pointOnCurve(&curve, &E);
+    printPointOnCurve(pointOnCurve(&curve, &E), "E");
 
     /**
 

@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/curve.c
+curve.h
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/curve.h
+gmp.h
+-
+
 /home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab1/curve.h
 gmp.h
 -

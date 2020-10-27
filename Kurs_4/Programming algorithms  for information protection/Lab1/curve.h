@@ -7,7 +7,9 @@
  * Структура для хранения точек
  */
 struct Point{
-    mpz_t X, Y, Z;
+    mpz_t X;
+    mpz_t Y;
+    mpz_t Z;
 
 };
 
