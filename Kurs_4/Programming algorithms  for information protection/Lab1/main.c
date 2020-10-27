@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+//#include <string.h>
 #include <gmp.h>
 #include "curve.h"
 #include "parameters.h"
@@ -25,29 +25,49 @@
  *
  */
 
+void printPointOnCurve (int belongs, char *point)
+{
+    printf (belongs == 1 ? "\e[36mPoint %s is on curve\e[0m\n\n" : "\e[31mPoint %s is not on curve\e[0m\n\n", point);
+}
 
+void printPointsEquality (int equal, char *P1, char *P2)
+{
+    printf (equal == 0 ? "\e[36mPoints %s and %s are equal\e[0m\n\n" : "\e[31mPoints %s and %s are not equal\e[0m\n\n", P1, P2);
+}
 
 void tests(){
 
-    struct Point E, P, P1, P2, P3;
-    mpz_inits( E.X,  E.Y,  E.Z,
-               P.X,  P.Y,  P.Z,
-              P1.X, P1.Y, P1.Z,
-              P2.X, P2.Y, P2.Z,
-              P3.X, P3.Y, P3.Z);
-
+    printf("Start testing!");
 
     struct JacobiCurve curve;
-    mpz_inits(curve.p, curve.X_base, curve.Y_base, curve.Z_base, curve.a, curve.d, curve.e, curve.q, curve.theta, curve.x, curve.y);
+    mpz_inits(curve.p, curve.X_base, curve.Y_base, curve.Z_base, curve.a, curve.d);
+    mpz_inits(curve.e, curve.q, curve.theta, curve.x, curve.y);
 
+    printf("\nTest JacobiCurveInit:");
+    JacobiCurveInit(&curve);
+
+
+    struct Point E, P, P1, P2, P3;
+    //mpz_inits( E.X,  E.Y,  E.Z);
+
+    /**
+    mpz_inits( E.X,  E.Y,  E.Z,
+               P.X,  P.Y,  P.Z,
+               P1.X, P1.Y, P1.Z,
+               P2.X, P2.Y, P2.Z,
+               P3.X, P3.Y, P3.Z);
+
+
+    /**
 
     printf("\nTest printing:");
-    struct Point point1, point2, point3;
+    struct Point point1, point2, point3, res;
     mpz_inits(point1.X, point1.Y, point1.Z);
     mpz_set_ui(point1.X, 1);
     mpz_set_ui(point1.Y, 2);
     mpz_set_ui(point1.Z, 3);
     printProjectivePoint(&point1);
+
 
     printf("Test neutralPointInit:");
     neutralPointInit(&point2);
@@ -60,11 +80,20 @@ void tests(){
 
 
     printf("Test basePointInit:");
+    basePointInit(&point1, &curve);
 
 
     printf("Test affineCoordinatesConversion:");
 
     printf("Test printAffinePoint:");
+    printAffinePoint(&point1, &curve);
+
+
+    printf("Test pointsAddition");
+    pointsAddition(&res, &point1, &point2, &curve);
+
+    printf("Test pointsEquality");
+    pointsEquality(&point1, &point2, &curve);
 
     printf("Test pointFree");
     pointFree(&point1);
@@ -74,6 +103,8 @@ void tests(){
     printf("Test curveFree");
     curveFree(&curve);
 
+     */
+
 
 
 }
@@ -82,7 +113,7 @@ void tests(){
 
 
 int main() {
-    //tests();
+    tests();
     return 0;
 }
 

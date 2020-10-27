@@ -40,14 +40,11 @@ struct JacobiCurve{
     mpz_t theta;       // (theta, 0) - точка второго порядка в форме Вейерштрасса
 };
 
-
-
 // инициализация порождающей точки
 void basePointInit (struct Point *point, const struct JacobiCurve *curve);
 
 // перевод в аффинные координаты из проективных
 void affineCoordinatesConversion (struct Point *res, const struct Point *point, const struct JacobiCurve *curve);
-
 
 // вывод координат точки в аффинных координатах на экран
 void printAffinePoint (const struct Point *point, const struct JacobiCurve *curve);
@@ -55,24 +52,22 @@ void printAffinePoint (const struct Point *point, const struct JacobiCurve *curv
 // инициализация кривой в форме квадрики Якоби
 void JacobiCurveInit (struct JacobiCurve *curve);
 
-
-
-
-
 // сложение двух точек
 void pointsAddition (struct Point *res, const struct Point *P1, const struct Point *P2, const struct JacobiCurve *curve);
 
 // сравнение двух  точек на равенство
-int pointsEquality (const struct point *P1, const struct point *P2, const struct jacobiCurve *curve);
+int pointsEquality (const struct Point *P1, const struct Point *P2, const struct JacobiCurve *curve);
+
+
 
 // запись противоположной точки
-void negativePoint (struct point *res, const struct point *point);
+void negativePoint (struct Point *res, const struct Point *point);
 
 // алгоритм "Лесенка Монтгомери" для вычисления кратной точки
-void montgomeryLadder (struct point *res, const struct point *point, const struct jacobiCurve *curve, const mpz_t *power);
+void montgomeryLadder (struct Point *res, const struct Point *point, const struct JacobiCurve *curve, const mpz_t power);
 
 // проверка, лежит ли точка на кривой
-int pointOnCurve (const struct jacobiCurve *curve, const struct point *point);
+int pointOnCurve (const struct JacobiCurve *curve, const struct Point *point);
 
 // очистка памяти
 void pointFree (struct Point *point);
