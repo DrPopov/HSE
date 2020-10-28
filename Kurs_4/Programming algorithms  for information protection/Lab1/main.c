@@ -27,12 +27,13 @@
 
 void printPointOnCurve (int belongs, char *point)
 {
-    printf (belongs == 0 ? "Point %s is on curve\n\n" : "Point %s is not on curve\n\n", point);
+    //printf ("Result: %d\n", belongs );
+    printf (belongs == 0 ? "\033[0;32mPoint %s is on curve\033[0m\n\n" : "\033[0;31mPoint %s is not on curve\033[0m\n\n", point);
 }
 
 void printPointsEquality (int equal, char *P1, char *P2)
 {
-    printf (equal == 0 ? "\e[36mPoints %s and %s are equal\e[0m\n\n" : "\e[31mPoints %s and %s are not equal\e[0m\n\n", P1, P2);
+    printf (equal == 0 ? "\n\033[0;32mPoints %s and %s are equal\033[0m\n\n" : "\033[31mPoints %s and %s are not equal\033[0m\n\n", P1, P2);
 }
 
 void tests(){
@@ -56,7 +57,7 @@ void tests(){
 
 
     mpz_t power, k1, k2, max_rand;
-    mpz_init(max_rand);
+    mpz_init(max_rand); mpz_init(power); mpz_init(k1); mpz_init(k2);
     mpz_set_str(max_rand, max_rand_str, 10);
 
 
@@ -67,62 +68,136 @@ void tests(){
     gmp_printf("\nParameter d = %Zd\n\n", curve.d);
 
     // TEST 1: E = (0 : 1 : 1) is on curve
-    printf("--------------- Test 1: ---------------");
+    printf("--------------- \033[0;33mTest 1:\033[0m ---------------");
     neutralPointInit(&E);
-    printf("\nE - neutral element (0 : 1 : 1):");
+    printf("\nE - neutral element (0 : 1 : 1):");            // E - нейтральная в проективных
     printProjectivePoint(&E);
-    printf("E in affine coordinates:");
+    printf("E in affine coordinates:\n");
     printAffinePoint(&E, &curve);
-    //pointOnCurve(&curve, &E);
     printPointOnCurve(pointOnCurve(&curve, &E), "E");
 
-    /**
 
-    printf("\nTest printing:");
-    struct Point point1, point2, point3, res;
-    mpz_inits(point1.X, point1.Y, point1.Z);
-    mpz_set_ui(point1.X, 1);
-    mpz_set_ui(point1.Y, 2);
-    mpz_set_ui(point1.Z, 3);
-    printProjectivePoint(&point1);
-
-
-    printf("Test neutralPointInit:");
-    neutralPointInit(&point2);
-    printProjectivePoint(&point2);
+    // TEST 2: P (base point) is on curve
+    printf("--------------- \033[0;33mTest 2:\033[0m ---------------");
+    basePointInit (&P, &curve);                                      // P - базовая в проективных
+    printf ("\nP - base point in projective coordinates:");
+    printProjectivePoint (&P);
+    printf ("P in affine coordinates:\n");
+    printAffinePoint (&P, &curve);
+    printPointOnCurve (pointOnCurve (&curve, &P), "P");
 
 
-    printf("Test customPointInit:");
-    customPointInit(&point3, "3", "4", "5");
-    printProjectivePoint(&point3);
+    // TEST 3: E + P = P; (E + P) is on curve
+    printf("--------------- \033[0;33mTest 3:\033[0m ---------------");
+    pointsAddition (&P1, &E, &P, &curve);                                   // P1 = E + P в проективных
+    printPointsEquality (pointsEquality (&P1, &P, &curve), "(E + P)", "P");
+    printPointOnCurve (pointOnCurve (&curve, &P1), "(E + P)");
 
 
-    printf("Test basePointInit:");
-    basePointInit(&point1, &curve);
+    // TEST 4: point (2 : 4 : 6) is not on curve
+    printf("--------------- \033[0;33mTest 4:\033[0m ---------------");
+    customPointInit(&P3, "2", "4", "6");                    // P3 = (2 : 4 : 6) в проективных
+    printf ("\nPoint (2 : 4 : 6) in affine coordinates:\n");
+    printAffinePoint (&P3, &curve);
+    printPointsEquality (pointsEquality (&E, &P3, &curve), "E", "(2 : 4 : 6)");
+    printPointOnCurve (pointOnCurve (&curve, &P3), "(2 : 4 : 6)");
 
 
-    printf("Test affineCoordinatesConversion:");
+    // TEST 5: (q + 1) * P = P
+    printf("--------------- \033[0;33mTest 5:\033[0m ---------------");
+    mpz_set_str (power, "1", 10);                                        // power = 1
+    mpz_add (power, power, curve.q);                                     // power = q + 1
+    montgomeryLadder (&P2, &P, &curve, power);                          // P2 = (q + 1) * P в проективных (с помощью лесенки Монтгомери)
+    printf ("\nP in affine coordinates:\n");
+    printAffinePoint (&P, &curve);
+    printf ("(q + 1) * P in affine coordinates:\n");
+    printAffinePoint (&P2, &curve);
+    printPointsEquality (pointsEquality (&P, &P2, &curve), "((q + 1) * P)", "P");
+    printPointOnCurve (pointOnCurve (&curve, &P2), "(q + 1) * P");
 
-    printf("Test printAffinePoint:");
-    printAffinePoint(&point1, &curve);
+
+    // TEST 6: q * P = E (единичный элемент P + (-P) = 0)
+    printf("--------------- \033[0;33mTest 6:\033[0m ---------------");
+    montgomeryLadder (&P1, &P, &curve, curve.q);                      // P1 = q * P в проективных (с помощью лесенки Монтгомери)
+    printf ("\nE in affine coordinates:\n");
+    printAffinePoint (&E, &curve);
+    printf ("(q * P) in affine coordinates:\n");
+    printAffinePoint (&P1, &curve);
+    printPointsEquality (pointsEquality (&P1, &E, &curve), "(q * P)", "E");
+    printPointOnCurve (pointOnCurve (&curve, &P1), "(q * P)");
 
 
-    printf("Test pointsAddition");
-    pointsAddition(&res, &point1, &point2, &curve);
+    // TEST 7: (q - 1) * P = -P
+    printf("--------------- \033[0;33mTest 7:\033[0m ---------------");
+    mpz_set_str(power, "1", 10);                                        // power = 1
+    mpz_add(power, curve.q, power);                                     // power = q - 1
+    montgomeryLadder (&P2, &P, &curve, power);                          // P2 = (q - 1) * P в проективных (с помощью лесенки Монтгомери)
+    negativePoint (&P1, &P);                                            // P1 = -P в проективных
+    printf ("-P in projective coordinates:\n");
+    printProjectivePoint (&P1);
+    printf ("-P in affine coordinates:\n");
+    printAffinePoint (&P1, &curve);
+    printf ("(q - 1) * P in affine coordinates:\n");
+    printAffinePoint (&P2, &curve);
+    printPointsEquality (pointsEquality (&P1, &P2, &curve), "((q + 1) * P)", "P");
+    printPointOnCurve (pointOnCurve (&curve, &P2), "(q + 1) * P");
 
-    printf("Test pointsEquality");
-    pointsEquality(&point1, &point2, &curve);
 
-    printf("Test pointFree");
-    pointFree(&point1);
-    pointFree(&point2);
-    pointFree(&point3);
+    // TEST 8: P + ... + P (12543 times) = 12543 * P
+    printf("--------------- \033[0;33mTest 8:\033[0m ---------------");
+    neutralPointInit (&P1);                                             // P1 - нейтральная в проективных
+    for (int i = 0; i < 12543; ++i)
+    {
+        pointsAddition (&P1, &P1, &P, &curve);
+    }
+    mpz_set_str (power, "12543", 10);                                      // power =  12543
+    montgomeryLadder(&P2, &P, &curve, power);                             // P2 = 12543 * P в проективных (с помощью лесенки Монтгомери)
+    printf ("\n(P + ... + P 543 times) in affine coordinates:\n");
+    printAffinePoint (&P1, &curve);
+    printf ("(543 * P) in affine coordinates:\n");
+    printAffinePoint (&P2, &curve);
+    printPointsEquality (pointsEquality (&P1, &P2, &curve), "(P + ... + P 12543 times)", "(12543 * P)");
+    printPointOnCurve (pointOnCurve (&curve, &P1), "(P + ... + P 12543 times)");
+    printPointOnCurve (pointOnCurve (&curve, &P2), "(12543 * P)");
 
-    printf("Test curveFree");
-    curveFree(&curve);
 
-     */
 
+    // TEST 9: power * P
+
+    printf("--------------- \033[0;33mTest 9:\033[0m ---------------");
+    gmp_randstate_t state;
+    gmp_randinit_default(state);
+    mpz_urandomm(power, state, max_rand);
+    printf ("TEST 9: %s * P:\n\n", power);
+    printf ("(%s * P) in affine coordinates:\n", power);
+    montgomeryLadder (&P1, &P, &curve, power);                          // P1 = power * P в проективных (с помощью лесенки Монтгомери)
+    printAffinePoint (&P1, &curve);
+    printPointOnCurve (pointOnCurve (&curve, &P1), "(power * P)");
+    printf ("Power = %s\n\n", power);
+
+
+    // TEST 10: k1 * P + k2 * P = (k1 + k2) * P
+    printf("--------------- \033[0;33mTest 10:\033[0m ---------------");
+    printf ("TEST 10: k1 * P + k2 * P = (k1 + k2) * P:\n\n");
+    mpz_urandomm (k1, state, max_rand);
+    mpz_urandomm (k1, state, max_rand);
+    mpz_add (power, k1, k2);                                             // power = k1 + k2
+    montgomeryLadder (&P1, &P, &curve, k1);                             // P1 = k1 * P в проективных (с помощью лесенки Монтгомери)
+    montgomeryLadder (&P2, &P, &curve, k2);                             // P2 = k2 * P в проективных (с помощью лесенки Монтгомери)
+    pointsAddition (&P1, &P1, &P2, &curve);                             // P1 = P1 + P2 в проективных (с помощью лесенки Монтгомери)
+    printf ("(%s * P + %s * P) in affine coordinates:\e[0m\n", k1, k2);
+    printAffinePoint (&P1, &curve);
+    montgomeryLadder(&P3, &P, &curve, power);                           // P3 = (k1 + k2) в проективных (с помощью лесенки Монтгомери)
+    printf ("(%s * P) in affine coordinates:\n", power);
+    printAffinePoint (&P3, &curve);
+    printPointsEquality (pointsEquality (&P1, &P3, &curve), "(k1 * P + k2 * P)", "((k1 + k2) * P)");
+    printPointOnCurve (pointOnCurve (&curve, &P1), "(k1 * P + k2 * P)");
+    printPointOnCurve (pointOnCurve (&curve, &P3), "((k1 + k2) * P)");
+
+
+    pointFree (&P); pointFree (&E); pointFree (&P1); pointFree (&P2); pointFree (&P3);
+    curveFree (&curve);
+    mpz_clear (power);
 
 
 }
