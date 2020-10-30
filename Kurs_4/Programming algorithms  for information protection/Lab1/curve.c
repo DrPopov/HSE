@@ -15,7 +15,7 @@ void printProjectivePoint (const struct Point *point)
  *  Инициализация нейтрального элемента в проективных координатах 0 = (0, 1, 1)
  */
 void neutralPointInit (struct Point *point){
-    mpz_init(point->X); mpz_init(point->Y); mpz_init( point->Z);
+    mpz_inits(point->X, point->Y, point->Z, NULL);
     mpz_set_str(point->X, "0", 10);
     mpz_set_str(point->Y, "1", 10);
     mpz_set_str(point->Z, "1", 10);
@@ -25,7 +25,7 @@ void neutralPointInit (struct Point *point){
  * Инициализация точки с произвольными координатами
  */
 void customPointInit (struct Point *point, char *X, char *Y, char *Z) {
-    mpz_init(point->X);  mpz_init(point->Y); mpz_init(point->Z);
+    mpz_inits(point->X, point->Y, point->Z, NULL);
     mpz_set_str(point->X, X, 10);
     mpz_set_str(point->Y, Y, 10);
     mpz_set_str(point->Z, Z, 10);
@@ -50,12 +50,12 @@ void basePointInit (struct Point *point, const struct JacobiCurve *curve){
  */
 void affineCoordinatesConversion (struct Point *res, const struct Point *point, const struct JacobiCurve *curve){
     mpz_t x, y, z, exp;
-    mpz_init(x); mpz_init(y); mpz_init(z); mpz_init(exp);
+    mpz_inits(x, y, z, exp, NULL);
 
     // x = X / Z
     mpz_invert(x, point->Z, curve->p);                  // x = 1 / Z
-    mpz_mul(x, x, point->X);                            // x * X / Z
-    mpz_mod(x, x, curve->p);                         // x * X mod p
+    mpz_mul(x, x, point->X);                            // x = X / Z
+    mpz_mod(x, x, curve->p);                            // x = X mod p
 
 
     // y = Y / Z^2
@@ -67,7 +67,7 @@ void affineCoordinatesConversion (struct Point *res, const struct Point *point, 
 
 
     // z = 0
-    mpz_set_str(z, "0", 10);                           // z = 0
+    mpz_set_str(&z, "0", 10);                           // z = 0
 
 
     mpz_set(res->X, x);
@@ -76,7 +76,7 @@ void affineCoordinatesConversion (struct Point *res, const struct Point *point, 
 
 
     // Clear
-    mpz_clear(x); mpz_clear(y); mpz_clear(z); mpz_clear(exp);
+    mpz_clears(x, y, z, exp, NULL);
 
 }
 
@@ -86,7 +86,7 @@ void affineCoordinatesConversion (struct Point *res, const struct Point *point, 
 void printAffinePoint (const struct Point *point, const struct JacobiCurve *curve)
 {
     struct Point res;
-    mpz_init(res.X); mpz_init(res.Y); mpz_init(res.Z);
+    mpz_inits(res.X, res.Y, res.Z, NULL);
     neutralPointInit (&res);
 
     affineCoordinatesConversion (&res, point, curve);
@@ -99,8 +99,7 @@ void printAffinePoint (const struct Point *point, const struct JacobiCurve *curv
  */
 void JacobiCurveInit(struct JacobiCurve *curve){
     mpz_t buf1, buf2, buf3, exp;
-    mpz_inits(buf1,  buf2, buf3);
-    mpz_init(exp);
+    mpz_inits(buf1,  buf2, buf3, exp, NULL);
 
     mpz_set_str(curve->theta, theta_str, 10);
     mpz_set_str(curve->a,         a_str, 10);
@@ -177,24 +176,22 @@ void JacobiCurveInit(struct JacobiCurve *curve){
     mpz_mod(curve->Z_base, curve->Z_base, curve->p);
 
 
-    mpz_clear(buf1);
-    mpz_clear(buf2);
-    mpz_clear(buf3);
-
+    mpz_clears(buf1, buf2, buf3, NULL);
 }
 
 
 // сложение двух точек
 void pointsAddition (struct Point *res, const struct Point *P1, const struct Point *P2, const struct JacobiCurve *curve){
     mpz_t T1, T2, T3, T4, T5, T6, T7, T8, exp;
-    mpz_init(T1); mpz_init(T2); mpz_init(T3); mpz_init(T4); mpz_init(T5); mpz_init(T6); mpz_init(T7);  mpz_init(T8); mpz_init(exp);
+    mpz_inits(T1, T2, T3, T4, T5, T6, T7, T8, exp, NULL);
 
     mpz_set(T1, P1->X);                                     // T1 = X1; T2 = Y1; T3 = Z1
     mpz_set(T2, P1->Y);
     mpz_set(T3, P1->Z);
+
     mpz_set(T4, P2->X);                                      // T4 = X2; T5 = Y2; T6 = Z2
-    mpz_set(T4, P2->Y);
-    mpz_set(T4, P2->Z);
+    mpz_set(T5, P2->Y);
+    mpz_set(T6, P2->Z);
     mpz_set_str(exp, "2", 10);
 
 
@@ -263,24 +260,25 @@ void pointsAddition (struct Point *res, const struct Point *P1, const struct Poi
 
 
 
-    mpz_clear(T1); mpz_clear(T2);  mpz_clear(T3); mpz_clear(T4); mpz_clear(T5); mpz_clear(T6); mpz_clear(T7); mpz_clear(T8);
+    mpz_clears(T1, T2, T3, T4, T5, T6, T7, T8, NULL);
 }
 
 
 // сравнение двух  точек на равенство
 int pointsEquality (const struct Point *P1, const struct Point *P2, const struct JacobiCurve *curve){
    struct Point res1, res2;
-   mpz_init(res1.X); mpz_init(res1.Y); mpz_init(res1.Z); mpz_init(res2.X); mpz_init(res2.Y); mpz_init(res2.Z);
+   mpz_inits(res1.X, res1.Y, res1.Z, res2.X, res2.Y, res2.Z, NULL);
 
    int eq = -2;
 
-   neutralPointInit(&res1);
-   neutralPointInit(&res2);
+   neutralPointInit (&res1);
+   neutralPointInit (&res2);
 
    affineCoordinatesConversion(&res1, P1, curve);
    affineCoordinatesConversion(&res2, P2, curve);
 
-   eq = (mpz_cmp(res1.X, res2.X) && mpz_cmp(res1.Y, res1.Y));
+
+   eq = (mpz_cmp(res1.X, res2.X) && mpz_cmp(res1.Y, res2.Y));
 
    pointFree(&res1);
    pointFree(&res2);
@@ -307,11 +305,12 @@ void montgomeryLadder (struct Point *res, const struct Point *point, const struc
     mpz_t tmp;
     mpz_init(tmp);
 
-    int bits = mpz_popcount(power);
+
+    int bits = mpz_sizeinbase(power, 2); //???
 
     struct Point R, Q;
-    mpz_init(R.X); mpz_init (R.Y); mpz_init(R.Z);
-    mpz_init(Q.X); mpz_init (Q.Y); mpz_init(Q.Z);
+    mpz_inits(R.X, R.Y, R.Z, NULL);
+    mpz_inits(Q.X, Q.Y, Q.Z, NULL);
 
     neutralPointInit (&Q);
 
@@ -338,9 +337,7 @@ void montgomeryLadder (struct Point *res, const struct Point *point, const struc
     mpz_set (res->Y, Q.Y);
     mpz_set (res->Z, Q.Z);
 
-    mpz_clear(&R);
-    mpz_clear(&Q);
-    mpz_clear(tmp);
+    mpz_clears(&R, &Q, tmp, NULL);
 }
 
 /*
@@ -350,7 +347,7 @@ int pointOnCurve (const struct JacobiCurve *curve, const struct Point *point){
     int res = -2;
 
     mpz_t left, right, buf1, buf2, exp;
-    mpz_init(left);mpz_init(right); mpz_init(buf1); mpz_init(buf2); mpz_init(exp);
+    mpz_inits(left, right, buf1, buf2, exp, NULL);
 
 
     mpz_set_str (buf2, "4", 10);                                // buf2 = 4
@@ -379,7 +376,7 @@ int pointOnCurve (const struct JacobiCurve *curve, const struct Point *point){
 
     res =  mpz_cmp_d(buf1, 0);
 
-    mpz_clear(left); mpz_clear(right); mpz_clear(buf1); mpz_clear(buf2);
+    mpz_clears(left, right, buf1, buf2, NULL);
 
     return res;
 }
@@ -391,9 +388,7 @@ int pointOnCurve (const struct JacobiCurve *curve, const struct Point *point){
  */
 void pointFree (struct Point *point)
 {
-    mpz_clear(point->X);
-    mpz_clear(point->Y);
-    mpz_clear(point->Z);
+    mpz_clears(point->X, point->Y, point->Z, NULL);
 }
 
 
@@ -402,15 +397,5 @@ void pointFree (struct Point *point)
  */
 void curveFree (struct JacobiCurve *curve)
 {
-    mpz_clear(curve->theta);
-    mpz_clear(curve->a);
-    mpz_clear(curve->e);
-    mpz_clear(curve->d);
-    mpz_clear(curve->x);
-    mpz_clear(curve->y);
-    mpz_clear(curve->p);
-    mpz_clear(curve->q);
-    mpz_clear(curve-> X_base);
-    mpz_clear(curve->Y_base);
-    mpz_clear(curve->Z_base);
+    mpz_clears(curve->theta, curve->a, curve->e, curve->d, curve->x, curve->y, curve->p, curve->q, curve-> X_base, curve->Y_base, curve->Z_base, NULL);
 }
