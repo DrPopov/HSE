@@ -24,6 +24,18 @@ struct message{
 
 };
 
+//! Структура sembuf для операций над семафорами
+struct sembuf minus[1] = {{0,  -2, 0}};
+
+
+
+//! Объединение для semctl
+union semun{
+        int val;
+        struct semid_ds *sbuf;
+        ushort *array;
+}arg;
+
 
 int main(){
 	//! Поехали
@@ -64,9 +76,36 @@ int main(){
 
 	//! Подключение РОП к адресному пр-ву процесса
 	char *addr;
-	if((addr = (char *) shmat(shmid, 0, 0)) == NULL)
-		perror("Server: shared memory attach error");
+	addr = (char *) shmat(shmid, 0, 0);
 
-	printf("Адрес РОП: %d\n", &addr);
+	//printf("Адрес РОП: %d\n", &addr);
+
+
+	//! Устанавливаем начальное значение семафора равное 0
+        arg.val = 0;
+        semctl(semid, 0, SETVAL, arg);
+	
+	//!Ждем пока значение семафора будет больше или равно 2
+	semop(semid, minus, 1);
+	
+	printf("!!!!SISKI!!!!\n");
+
+	char cmd[1000] = "echo ";
+	strcat(cmd, addr);
+	
+	char buffer[1000];
+	FILE *f = popen(cmd, "r");
+	fgets(buffer, 1000, f);
+	printf("I suck %s", buffer);
+
+
+	
+
+	
+
+
+
+
+
 
 }

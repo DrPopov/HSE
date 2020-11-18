@@ -13,6 +13,17 @@
 #include <stdio.h>
 
 
+/* коды сообщений */
+
+#define MSG_TYPE_EMPTY  0 /* пустое сообщение */
+#define MSG_TYPE_STRING 1 /* тип сообщения о том, что
+                             передана непустая строка */
+#define MSG_TYPE_FINISH 2 /* тип сообщения о том, что
+                             пора завершать обмен */
+#define MAX_STRING	120
+
+
+
 //! Структура сообщения
 struct message{
         int type;
@@ -20,9 +31,23 @@ struct message{
 
 };
 
+//! Структура sembuf для операций над семафорами
+struct sembuf plus[1]  = {{0, 	2, 0}};
+
+
+//! Объединение для semctl
+union semun{
+	int val;
+	struct semid_ds *sbuf;
+	ushort *array;
+}arg;
 
 
 int main(){
+
+	char buffer[1024];
+	struct semid_ds buf;
+	struct shmid_ds sbuf;
         //! Поехали
         printf("Запускаем клиента. Поехали!!!\n");
 
@@ -61,12 +86,32 @@ int main(){
 	printf("Идентификатор РОП: %d\n", shmid);
 
 
-	/* получение адреса сегмента */
+	//! получение адреса сегмента
 	char * addr;
-	if ((addr = (char *) shmat (shmid, 0, 0)) == NULL)
-		perror("Client: shared memory attach error");
+	addr = (char *) shmat (shmid, 0, 0);
 
 
-	printf("Адрес РОП: %d\n", &addr);
+	//printf("Адрес РОП: %d\n", &addr);
 
+
+	char msg[1000] = "cal";
+	//char msg[100] = "echo hui";
+	FILE *f = popen(msg, "r");
+	//fgets(buffer, 1024, f);
+	
+
+	//! Устанавливаем начальное значение семафора равное 0
+	arg.val = 0;
+	semctl(semid, 0, SETVAL, arg);
+	
+	//! Записываем в РОП
+	memcpy(addr, str(&f), 100);
+	printf("BUff %s \n", addr);
+			
+	//! Отменяем блокировку - делаем значенеи 2
+	semop(semid, plus, 1);
+		
+
+	return 0;
+	
 }
