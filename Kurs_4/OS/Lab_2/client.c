@@ -11,49 +11,29 @@
 #include <sys/sem.h>    // Для semget()
 #include <string.h>
 #include <stdio.h>
+#include <unistd.h>   // sleep()
 
-
-/* коды сообщений */
-
-#define MSG_TYPE_EMPTY  0 /* пустое сообщение */
-#define MSG_TYPE_STRING 1 /* тип сообщения о том, что
-                             передана непустая строка */
-#define MSG_TYPE_FINISH 2 /* тип сообщения о том, что
-                             пора завершать обмен */
-#define MAX_STRING	120
-
-
-
-//! Структура сообщения
-struct message{
+typedef struct{
         int type;
         char text[1024];
 
-};
+} message_t;
 
 //! Структура sembuf для операций над семафорами
-struct sembuf plus[1]  = {{0, 	2, 0}};
-
+struct sembuf minus[1]  = {0, -2, 0};
 
 //! Объединение для semctl
 union semun{
 	int val;
-	struct semid_ds *sbuf;
-	ushort *array;
+	struct semid_ds *buf;
+	unsigned short *array;
 }arg;
 
 
 int main(){
-
-	char buffer[1024];
-	struct semid_ds buf;
-	struct shmid_ds sbuf;
-        //! Поехали
         printf("Запускаем клиента. Поехали!!!\n");
-
-	struct message msg1;
 	
-
+	//message_t msg1;
         //! Генерируем идентификаторы РОП и семафора
         key_t sem_key, shm_key;
 
@@ -66,51 +46,69 @@ int main(){
         int id_2 = 'K';
         shm_key = ftok(shm_path, id_2);
 
-        printf("Semaphore key on client is: %d\n", sem_key);
-        printf("Shared memory key on client is: %d\n", shm_key);
-
-
-	//!Получить доступ к массиву семафоров 
+        printf("Ключ семафора на клиенте: %d\n", sem_key);
+        printf("Ключ РОП на клиенте: %d\n", shm_key);
+	
 	int semid;
-	if ((semid = semget (sem_key, 1, 0)) < 0)
-    		perror("Client: can't get semaphore");
+	char *addr;
+	
+	// Пытаемся открыть РОП
+	int shmid = -1;
 
- 	printf("Идентификатор семафоров: %d\n", semid);	
-
-
-	//! Получение доступа к сегменту разделяемой памяти
-	int shmid;
-	if ((shmid = shmget (shm_key, sizeof (msg1.text), 0)) < 0)
-    		perror("Client: can't  get shared memory segment");
-
+	while(shmid == -1){
+		shmid = shmget (shm_key, 1024, 0);
+	}
+	
 	printf("Идентификатор РОП: %d\n", shmid);
-
-
+		
+	//!Получить доступ к массиву семафоров 
+        if ((semid = semget (sem_key, 1, 0)) < 0){
+        	perror("Client: can't get semaphore");
+        }
+	
+	printf("Идентификатор семафоров: %d\n", semid);
+	
 	//! получение адреса сегмента
-	char * addr;
 	addr = (char *) shmat (shmid, 0, 0);
 
 
-	//printf("Адрес РОП: %d\n", &addr);
+
+
 
 
 	char msg[1000] = "cal";
-	//char msg[100] = "echo hui";
 	FILE *f = popen(msg, "r");
-	//fgets(buffer, 1024, f);
+	
+	char msg2[1000] = "date +%A";
+	FILE *f2 = popen(msg2, "r");
 	
 
-	//! Устанавливаем начальное значение семафора равное 0
-	arg.val = 0;
-	semctl(semid, 0, SETVAL, arg);
+	char temp1[10];
+	fgets(temp1, sizeof(temp1), f2);
+
+	char buffer[1000];
+	char temp[1000];
+	strncat(buffer, temp1, 10);
+	while(fgets(temp, 1000 , f) != NULL){
+		strcat(buffer, " \n ");
+		strcat(buffer, temp);
+		//strcat(buffer, " \n ");
+	}
+	
+	printf("Buffer: %s", buffer);
+
+
+	//! Ждем пока сервер разблокирует, то есть сможем вычесть 2
+	semop(semid, minus, 1);
 	
 	//! Записываем в РОП
-	memcpy(addr, str(&f), 100);
-	printf("BUff %s \n", addr);
+	strncpy(addr, buffer, 1000);
 			
-	//! Отменяем блокировку - делаем значенеи 2
-	semop(semid, plus, 1);
-		
+	//! Блокируем, вычитаем еще 2 - делаем значенеи 0
+	semop(semid, minus, 1);		
+
+
+	shmdt(addr);
 
 	return 0;
 	

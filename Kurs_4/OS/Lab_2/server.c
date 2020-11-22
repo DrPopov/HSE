@@ -4,8 +4,10 @@
 //
 // Задание. Сервер:
 // Создать разделяемую область памяти (РОП) и набор семафоров (НС).
-// При поступлении клиентского сообщения о календаре текущего месяца, определить текущий день недели по текущей дате,
-// а также идентификато процесса который последним отсоединялся от РОП. Удалить РОП и НС.
+// При поступлении клиентского сообщения о календаре текущего месяца, определить текущий день недели по текущей дате
+//
+//
+// Удалить РОП и НС.
 //
 
 
@@ -15,19 +17,19 @@
 #include <sys/sem.h>	// Для semget()
 #include <string.h>
 #include <stdio.h>
-
+#include <unistd.h>
 
 //! Структура сообщения
-struct message{
+typedef struct{
 	int type;
 	char text[1024];
 
-};
+} message_t;
 
 //! Структура sembuf для операций над семафорами
-struct sembuf minus[1] = {{0,  -2, 0}};
-
-
+//struct sembuf minus[1] = {0,  -2, 0};
+//struct sembuf minus3[1] = {0, -3, 0};
+struct sembuf equal[1] = {0, 0, 0};
 
 //! Объединение для semctl
 union semun{
@@ -68,7 +70,7 @@ int main(){
 
 	//! Создаем сегмент разделяемой памяти
 	int shmid;
-	if((shmid = shmget(shm_key, 1024, IPC_CREAT | 0644)) < 0)
+	if((shmid = shmget(shm_key, sizeof(message_t), IPC_CREAT | 0644)) < 0)
 		perror("Server: can't create shared memory segment");
 	
 	printf("Идентификатор РОП: %d\n", shmid);
@@ -77,35 +79,29 @@ int main(){
 	//! Подключение РОП к адресному пр-ву процесса
 	char *addr;
 	addr = (char *) shmat(shmid, 0, 0);
+	
 
-	//printf("Адрес РОП: %d\n", &addr);
-
-
-	//! Устанавливаем начальное значение семафора равное 0
-        arg.val = 0;
+	//! Устанавливаем начальное значение семафора равное 4
+        arg.val = 4;
         semctl(semid, 0, SETVAL, arg);
+	printf("Arg is 4!\n");
+	semop(semid, equal, 1);
+
+	printf("Today is: %s\n", addr);
 	
-	//!Ждем пока значение семафора будет больше или равно 2
-	semop(semid, minus, 1);
+	arg.val = 10;
+	semctl(semid, 0, SETVAL, arg);
+	printf("Arg is 10!\n");
+	semop(semid, equal, 1);
+
+	printf("Hostname: %s\n", addr);
+
+	//! Отсоединяем РОП
+	if(shmdt(addr) == -1) perror("Server: error with shmdt");
 	
-	printf("!!!!SISKI!!!!\n");
-
-	char cmd[1000] = "echo ";
-	strcat(cmd, addr);
-	
-	char buffer[1000];
-	FILE *f = popen(cmd, "r");
-	fgets(buffer, 1000, f);
-	printf("I suck %s", buffer);
-
-
-	
-
-	
-
-
-
-
+	//! Удаляем РОП
+	if(semctl(semid, 0, IPC_RMID, 0) == -1) perror("Server: erorr with semctl");
+	if(shmctl(shmid, IPC_RMID, 0) == -1) perror("Server: error with shmctl");
 
 
 }
