@@ -19,17 +19,8 @@
 #include <stdio.h>
 #include <unistd.h>
 
-//! Структура сообщения
-typedef struct{
-	int type;
-	char text[1024];
-
-} message_t;
-
 //! Структура sembuf для операций над семафорами
-//struct sembuf minus[1] = {0,  -2, 0};
-//struct sembuf minus3[1] = {0, -3, 0};
-struct sembuf equal[1] = {0, 0, 0};
+struct sembuf equal[] = {0, 0, 0};
 
 //! Объединение для semctl
 union semun{
@@ -70,7 +61,7 @@ int main(){
 
 	//! Создаем сегмент разделяемой памяти
 	int shmid;
-	if((shmid = shmget(shm_key, sizeof(message_t), IPC_CREAT | 0644)) < 0)
+	if((shmid = shmget(shm_key, 1024, IPC_CREAT | 0644)) < 0)
 		perror("Server: can't create shared memory segment");
 	
 	printf("Идентификатор РОП: %d\n", shmid);
@@ -103,5 +94,5 @@ int main(){
 	if(semctl(semid, 0, IPC_RMID, 0) == -1) perror("Server: erorr with semctl");
 	if(shmctl(shmid, IPC_RMID, 0) == -1) perror("Server: error with shmctl");
 
-
+	return 0;
 }

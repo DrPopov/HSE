@@ -13,14 +13,8 @@
 #include <stdio.h>
 #include <unistd.h> // sleep()
 
-typedef struct{
-        int type;
-        char text[1024];
-
-}message_t;
-
 //! Структура sembuf для операций над семафорами
-struct sembuf minus[1]  = {0,   -5, 0};
+struct sembuf minus[]  = {0,   -5, 0};
 
 //! Объединение для semctl
 union semun{
@@ -51,24 +45,21 @@ int main(){
         printf("Ключ семафора на клиенте_2: %d\n", sem_key);
         printf("Ключ РОП на клиенте_2: %d\n", shm_key);
 
-	int semid;
+	//int semid;
 	char *addr;
 	
-	// Пытаемся открыть РОП
-        int shmid = -1;
+	
+	int semid = -1;
+	
+	while(semid == -1){
+		semid = semget(sem_key, 1, 0);
+	}
+        
+	printf("Идентификатор семафоров: %d\n", semid);
 
-	while(shmid == -1){
-                shmid = shmget (shm_key, 1024, 0);
-        }
+        int shmid = shmget (shm_key, 1024, 0);
 
         printf("Идентификатор РОП: %d\n", shmid);
-
-	//!Получить доступ к массиву семафоров 
-        if ((semid = semget (sem_key, 1, 0)) < 0){
-               perror("Клиент_2: Нет доступа до набора семафоров");
-	}
-
-	printf("Идентификатор семафоров: %d\n", semid);
 
 
         //! получение адреса сегмента
