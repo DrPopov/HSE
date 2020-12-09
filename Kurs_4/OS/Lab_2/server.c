@@ -20,7 +20,7 @@
 #include <unistd.h>
 
 //! Структура sembuf для операций над семафорами
-struct sembuf equal[] = {0, 0, 0};
+struct sembuf equal = {0, 0, 0};
 
 //! Объединение для semctl
 union semun{
@@ -76,14 +76,14 @@ int main(){
         arg.val = 4;
         semctl(semid, 0, SETVAL, arg);
 	printf("Arg is 4!\n");
-	semop(semid, equal, 1);
+	semop(semid, &equal, 1);
 
 	printf("Today is: %s\n", addr);
 	
 	arg.val = 10;
 	semctl(semid, 0, SETVAL, arg);
 	printf("Arg is 10!\n");
-	semop(semid, equal, 1);
+	semop(semid, &equal, 1);
 
 	printf("Hostname: %s\n", addr);
 

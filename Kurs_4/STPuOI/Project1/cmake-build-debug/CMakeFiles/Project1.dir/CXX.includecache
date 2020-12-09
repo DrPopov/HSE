@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/drpopov/Desktop/HSE/Kurs_4/STPuOI/Project1/Planet.h
+iostream
+-
+string
+-
+utility
+-
+
+/home/drpopov/Desktop/HSE/Kurs_4/STPuOI/Project1/main.cpp
+iostream
+-
+vector
+-
+Planet.h
+/home/drpopov/Desktop/HSE/Kurs_4/STPuOI/Project1/Planet.h
+

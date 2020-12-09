@@ -14,7 +14,7 @@
 #include <unistd.h> // sleep()
 
 //! Структура sembuf для операций над семафорами
-struct sembuf minus[]  = {0,   -5, 0};
+struct sembuf minus  = {0,   -5, 0};
 
 //! Объединение для semctl
 union semun{
@@ -75,13 +75,13 @@ int main(){
 	
 	
 	//! Ждем пока значение семафора будет больше или равно 5
-        semop(semid, minus, 1);
+        semop(semid, &minus, 1);
 
 	// Записываем в РОП
 	strncpy(addr, buffer, 1000);
 
 	// Блокируем
-	semop(semid, minus, 1);
+	semop(semid, &minus, 1);
 
 	
         shmdt(addr);

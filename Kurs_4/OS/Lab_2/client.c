@@ -15,7 +15,7 @@
 
 
 //! Структура sembuf для операций над семафорами
-struct sembuf minus[]  = {0, -2, 0};
+struct sembuf minus  = {0, -2, 0};
 
 //! Объединение для semctl
 union semun{
@@ -89,13 +89,13 @@ int main(){
 
 
 	//! Ждем пока сервер разблокирует, то есть сможем вычесть 2
-	semop(semid, minus, 1);
+	semop(semid, &minus, 1);
 	
 	//! Записываем в РОП
 	strncpy(addr, buffer, 1000);
 			
 	//! Блокируем, вычитаем еще 2 - делаем значенеи 0
-	semop(semid, minus, 1);		
+	semop(semid, &minus, 1);		
 
 
 	shmdt(addr);
