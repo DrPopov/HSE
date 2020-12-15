@@ -40,22 +40,21 @@ int main(){
         addr.sun_family  = AF_UNIX;
         strcpy(addr.sun_path,  "./sockname");
 
-	char cmd[100] = "ps a -e | awk '{print $1 \"\\t\" $3}'  | grep 'S$' |  awk '{print $1}'";
+	char cmd[100] = "ps a -e | awk '{print $1 \"\\t\" $3}'  | grep 'S$' |  awk '{print $1}' | tr \"\\n\" \" \"";
         FILE *f = popen(cmd, "r");
 	char  temp[2048];
 	fgets(temp, sizeof(temp), f);
 
 	
 	printf("Msg: %s\n", temp);
-        char *hello = "Hello from Hell! Hah";
 
 
 	// Отправляем сообщение
-	sendto(sid, (char *) temp, strlen(temp), MSG_CONFIRM, (struct sockaddr *)&addr, sizeof(addr));
-       // sendto(sid, (char *) hello, strlen(hello), MSG_CONFIRM, (struct sockaddr *)&addr, sizeof(addr));
+	sendto(sid, (char *) temp, strlen(temp), 0, (struct sockaddr *)&addr, sizeof(addr));
 	
 	printf("Message to server sent!\n");
-
+	
+	close(sid);
         return 0;
 
 }

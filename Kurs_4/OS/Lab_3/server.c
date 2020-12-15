@@ -53,26 +53,29 @@ int main(){
 	len = sizeof(client_addr); 
 
 	// Ждем получения сообщения
-	n = recvfrom(sid, (char *)buff, 2048, MSG_WAITALL, (struct sockaddr *) &client_addr, &len);
+	n = recvfrom(sid, (char *)buff, 2048, 0, (struct sockaddr *) &client_addr, &len);
 	buff[n] = '\0';
 
-	//char cmd1[124] = "echo";
-	//strcat(cmd1, buff);
-	//strcat(cmd1, " ");
+	
+	printf("Buff: %s", buff);
+	
+	char sep[10] = " ";
+       	char *istr;	
+	istr = strtok(buff, sep);
+	
+	char cmd0[1024] = " -o etimes -o pri | sed '1d'";
+	while(istr != NULL){
+		char cmd[1024] = "ps -p ";
+		strcat(cmd, istr);
+		strcat(cmd, cmd0);
 		
-	char cmd[100] = "ps -e -o etimes -o pri";
-	FILE *f = popen(cmd, "r");
-	char msg[2048];
-	fgets(msg, sizeof(msg), f);
-	
-	printf("Message: %s\n", msg);
-	
-	// Закрываем соединение между СГ и КГ
-	if(shutdown(sid, 2) == -1){
-		perror("shutdown error!");
-	};
-       	
-        // Удаляем созданный файл
+		FILE *f = popen(cmd, "r");
+	        char msg[2048];
+        	fgets(msg, sizeof(msg), f);
+		printf("%s\n", msg);
+
+		istr = strtok(NULL, sep);
+	}
 	remove("./sockname");
 
 	// Закрываем дескрипторы
