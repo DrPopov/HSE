@@ -1,0 +1,48 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab2/ECDSA.c
+ECDSA.h
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab2/ECDSA.h
+gmp.h
+-
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab2/ECDSA.h
+gmp.h
+-
+ECDSA.h
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab2/ECDSA.h
+gmp.h
+-
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab2/main.c
+stdio.h
+-
+gmp.h
+-
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+ECDSA.h
+/home/drpopov/Desktop/HSE/Kurs_4/Programming algorithms  for information protection/Lab2/ECDSA.h
+
